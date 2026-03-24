@@ -19,7 +19,6 @@ h1 {
 .tagline {
     color: #8b949e;
     margin-bottom: 40px;
-    font-size: 16px;
 }
 
 h2 {
@@ -43,6 +42,13 @@ h2 {
     border-color: #58a6ff;
 }
 
+/* IMAGE STYLE */
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .project h3 {
     margin-top: 0;
     font-size: 20px;
@@ -56,7 +62,7 @@ h2 {
 .project h4 {
     margin-top: 20px;
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 13px;
     color: #8b949e;
     text-transform: uppercase;
     letter-spacing: 0.5px;
