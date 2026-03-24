@@ -1,55 +1,82 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
-    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 5px;
 }
 
 .tagline {
-    color: #aaa;
-    margin-bottom: 30px;
+    color: #8b949e;
+    margin-bottom: 40px;
+    font-size: 16px;
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 50px;
+    font-size: 24px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
 }
 
 .project {
-    background: #1a1a1a;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    transition: 0.2s;
+    background: #161b22;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    transition: all 0.2s ease;
 }
 
 .project:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    border-color: #58a6ff;
 }
 
 .project h3 {
     margin-top: 0;
+    font-size: 20px;
+}
+
+.project p {
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+.project h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project ul {
     padding-left: 20px;
+    margin: 10px 0;
+}
+
+.project li {
+    margin-bottom: 6px;
 }
 
 .project a {
     display: inline-block;
-    margin-top: 10px;
-    color: #4da6ff;
+    margin-top: 15px;
+    color: #58a6ff;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .project a:hover {
