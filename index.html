@@ -20,7 +20,6 @@
 
         <!-- PROJECT 1 -->
         <div class="project">
-
             <img src="https://play-lh.googleusercontent.com/B6yNii1EoaF_8Apf-fcKphFw5IOMNhO8PgcuaPBMBmJH22mnAcdHdHaTKIZVFZhgv1SwQ1TYLkYBGUHrWJufhQ=w800"
                  alt="Bike Rider Game" class="project-img">
 
@@ -33,38 +32,34 @@
             <div class="details">
 
                 <p>
-                    A city-based open-world game where players take on delivery missions while progressing through a relationship-driven storyline.
+                    A city-based open-world game focused on delivery missions and relationship-driven progression.
                 </p>
 
                 <h4>Core Gameplay</h4>
                 <ul>
                     <li>Delivery missions across an open city</li>
                     <li>Exploration using multiple vehicle types</li>
-                    <li>Relationship progression through choices</li>
-                </ul>
-
-                <h4>Delivery System</h4>
-                <ul>
-                    <li>Orders managed through in-game mobile phone</li>
-                    <li>Accept, pick up, and deliver missions</li>
-                    <li>Continuous order updates for gameplay loop</li>
+                    <li>Choice-based relationship progression</li>
                 </ul>
 
                 <h4>AI & NPC System</h4>
                 <ul>
-                    <li>Dynamic pedestrian system for city population</li>
-                    <li>NPC behavior for interactive and living environment</li>
-                    <li>Object pooling system to reuse NPCs efficiently</li>
-                    <li>Distance-based management to recycle far NPCs near player</li>
+                    <li>Manager-driven pedestrian system controlling all NPCs</li>
+                    <li>Spline-based pathing for optimized movement</li>
+                    <li>State machine-driven behavior transitions</li>
+                    <li>Object pooling for efficient NPC reuse</li>
+                    <li>Distance-based recycling of far NPCs near player</li>
+                    <li>NPC detaches and follows player on interaction</li>
+                    <li>Re-subscribes back to system after interaction</li>
+                    <li>NavMesh used only as fallback when NPC gets stuck</li>
                 </ul>
 
                 <h4>My Contribution</h4>
                 <ul>
-                    <li>Solo developer for core gameplay systems</li>
+                    <li>Solo developer for core systems</li>
                     <li>Player and vehicle controllers</li>
-                    <li>NPC and pedestrian systems</li>
-                    <li>Delivery and progression systems</li>
-                    <li>Performance optimization for large open environment</li>
+                    <li>NPC, pedestrian, and delivery systems</li>
+                    <li>Performance optimization for open-world environment</li>
                 </ul>
 
                 <a href="https://play.google.com/store/apps/details?id=com.delivery.rider.openworld.story" target="_blank">
@@ -72,73 +67,46 @@
                 </a>
 
             </div>
-
         </div>
 
         <!-- PROJECT 2 -->
         <div class="project">
-
-           <img src="https://play-lh.googleusercontent.com/NVaFyNlv55-gL9EhbiF2UErYo9f9FGObCbBMtwLBkcGeGehkyCzf0912EA2BLNt5Zw=w800"
-     alt="Crazy Racing Game" class="project-img">
+            <img src="https://play-lh.googleusercontent.com/NVaFyNlv55-gL9EhbiF2UErYo9f9FGObCbBMtwLBkcGeGehkyCzf0912EA2BLNt5Zw=w800"
+                 alt="Crazy Racing Game" class="project-img">
 
             <h3>🏎️ Crazy Racing Master: Car Game</h3>
 
             <p class="short-desc">
-                Fast-paced racing game with physics-driven vehicle control and progression system.
+                Racing game with physics-driven vehicle control and progression system.
             </p>
 
             <div class="details">
 
                 <p>
-                    A competitive racing experience where players navigate spline-based tracks, avoid obstacles, and compete against AI opponents across multiple levels.
+                    A competitive racing game featuring spline-based tracks, AI opponents, and dynamic obstacles.
                 </p>
-
-                <h4>Core Gameplay</h4>
-                <ul>
-                    <li>Spline-based racing tracks</li>
-                    <li>Swipe controls for lateral movement</li>
-                    <li>AI opponents for competitive racing</li>
-                    <li>Dynamic obstacles and upside-down track sections</li>
-                </ul>
 
                 <h4>Vehicle System</h4>
                 <ul>
-                    <li>Custom vehicle controller with hoverboard-style physics</li>
+                    <li>Custom hoverboard-style physics controller</li>
                     <li>Force-based movement and handling</li>
-                    <li>Stable control across complex track layouts</li>
-                </ul>
-
-                <h4>Progression & Customization</h4>
-                <ul>
-                    <li>Garage system with upgrades</li>
-                    <li>Multiple vehicles, tires, and paint options</li>
-                    <li>50+ levels with increasing difficulty</li>
+                    <li>Stable control across complex tracks</li>
                 </ul>
 
                 <h4>Tools & Optimization</h4>
                 <ul>
-                    <li>Dreamteck Splines (track path system)</li>
+                    <li>Dreamteck Splines (track system)</li>
                     <li>DOTween (UI animations)</li>
-                    <li>Odin Inspector (custom editor workflow)</li>
-                    <li>Addressables (memory-efficient loading for tracks and skyboxes)</li>
-                    <li>ScriptableObjects (shared configuration for vehicles and tracks)</li>
-                </ul>
-
-                <h4>Architecture & Performance</h4>
-                <ul>
-                    <li>Single-scene architecture for seamless gameplay flow</li>
-                    <li>Optimized loading to minimize interruptions</li>
-                    <li>Object pooling to reuse runtime objects efficiently</li>
-                    <li>Efficient memory handling for dynamic assets</li>
+                    <li>Odin Inspector</li>
+                    <li>Addressables (memory optimization)</li>
+                    <li>ScriptableObjects (shared configurations)</li>
                 </ul>
 
                 <h4>My Contribution</h4>
                 <ul>
-                    <li>Built the game from scratch as a solo developer</li>
-                    <li>Designed and implemented vehicle controller</li>
-                    <li>Developed racing mechanics and controls</li>
-                    <li>Implemented progression and customization systems</li>
-                    <li>Architected performance systems</li>
+                    <li>Built from scratch as solo developer</li>
+                    <li>Vehicle controller and racing systems</li>
+                    <li>Customization and progression systems</li>
                 </ul>
 
                 <a href="https://play.google.com/store/apps/details?id=com.ms.race.racing.car.master" target="_blank">
@@ -146,7 +114,78 @@
                 </a>
 
             </div>
+        </div>
 
+        <!-- PROJECT 3 -->
+        <div class="project">
+            <img src="https://play-lh.googleusercontent.com/SmhJ5vEvhLZiSK6ujs2GdzUWv_hNNPYwmx__kc5L6DTrWYnhIQQLT0kdgUMNJ2e77N4=w800"
+                 alt="Flying Action Hero" class="project-img">
+
+            <h3>🦸 Flying Action Hero Open World</h3>
+
+            <p class="short-desc">
+                Open-world hero game with combat, powers, and dynamic systems.
+            </p>
+
+            <div class="details">
+
+                <p>
+                    A superhero-based open-world game where players explore the city, use abilities, engage in combat, and complete missions.
+                </p>
+
+                <h4>Core Gameplay</h4>
+                <ul>
+                    <li>Open-world exploration with flight and super speed</li>
+                    <li>Combat system with powers and weapons</li>
+                    <li>Dual camera system (TPS and FPS)</li>
+                </ul>
+
+                <h4>AI & NPC System</h4>
+                <ul>
+                    <li>Manager-driven NPC system for city population</li>
+                    <li>Spline-based movement for optimized pathing</li>
+                    <li>State machine-driven behavior transitions</li>
+                    <li>Reaction system with chase and attack states</li>
+                    <li>NPC detaches from system during interaction</li>
+                    <li>Reintegrates back into system after interaction</li>
+                    <li>NavMesh used as fallback for edge cases</li>
+                </ul>
+
+                <h4>Vehicle System</h4>
+                <ul>
+                    <li>Custom vehicles (cars, bikes, hoverboards, helicopters)</li>
+                    <li>Integration with traffic vehicles</li>
+                    <li>Dynamic ownership when player uses vehicle</li>
+                </ul>
+
+                <h4>Game Modes</h4>
+                <ul>
+                    <li>Open-world free roam</li>
+                    <li>Mission mode with story-based objectives</li>
+                    <li>Phone-based mission system</li>
+                </ul>
+
+                <h4>Tools & Systems</h4>
+                <ul>
+                    <li>Mobile Traffic System</li>
+                    <li>Minimap system</li>
+                    <li>DOTween</li>
+                    <li>Odin Inspector</li>
+                </ul>
+
+                <h4>My Contribution</h4>
+                <ul>
+                    <li>Custom player controller</li>
+                    <li>Vehicle system across multiple types</li>
+                    <li>Combat, powers, and interaction systems</li>
+                    <li>Mission and progression systems</li>
+                </ul>
+
+                <a href="https://play.google.com/store/apps/details?id=com.speedhero.openworld.gangster.animals" target="_blank">
+                    ▶ Play on Google Play
+                </a>
+
+            </div>
         </div>
 
     </div>
