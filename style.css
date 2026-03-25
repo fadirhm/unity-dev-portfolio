@@ -47,9 +47,12 @@ h2 {
 /* ================= PROJECT CARD ======================= */
 /* ===================================================== */
 
-.project {
+.projects-grid .project {
     width: 100%;
     max-width: 220px;
+}
+
+.project {
     box-sizing: border-box;
     background: #161b22;
     border-radius: 16px;
