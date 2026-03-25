@@ -38,8 +38,9 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, 240px); /* 🔥 fixed width */
     gap: 20px;
+    justify-content: start; /* align left */
 }
 
 /* ===================================================== */
@@ -67,7 +68,7 @@ h2 {
 /* ===== COVER IMAGE ===== */
 .project-cover {
     width: 100%;
-    height: 140px;
+    height: 120px;   /* 🔥 smaller */
     object-fit: cover;
 }
 
