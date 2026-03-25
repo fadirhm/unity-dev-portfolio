@@ -5,12 +5,14 @@ body {
     color: #e6edf3;
 }
 
+/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
 }
 
+/* HEADER */
 h1 {
     font-size: 40px;
     margin-bottom: 5px;
@@ -28,11 +30,12 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* GRID */
+/* GRID (FIXED VERSION) */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    align-items: start; /* 🔥 CRITICAL FIX */
 }
 
 /* PROJECT CARD */
@@ -54,31 +57,31 @@ h2 {
 /* IMAGE */
 .project-img {
     width: 100%;
-    height: auto;
+    height: auto; /* ✅ no cropping */
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-/* TEXT */
+/* TITLE */
 .project h3 {
     margin: 0 0 10px 0;
     font-size: 18px;
 }
 
+/* SHORT DESCRIPTION */
 .short-desc {
     color: #8b949e;
     font-size: 14px;
 }
 
-/* EXPANDABLE */
+/* EXPANDABLE CONTENT (FIXED) */
 .details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    display: none; /* ✅ no max-height issues */
+    margin-top: 10px;
 }
 
 .project.active .details {
-    max-height: 500px;
+    display: block;
 }
 
 /* SECTION HEADINGS */
@@ -118,7 +121,7 @@ h2 {
     background: #2ea043;
 }
 
-/* RESPONSIVE */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
