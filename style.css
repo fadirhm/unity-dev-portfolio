@@ -38,14 +38,28 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 240px); /* 🔥 fixed width */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 220px)); /* fixed card width, no stretch */
+    gap: 18px;
     justify-content: start; /* align left */
 }
 
 /* ===================================================== */
 /* ================= PROJECT CARD ======================= */
 /* ===================================================== */
+
+.project {
+    width: 100%;
+    max-width: 220px;
+    box-sizing: border-box;
+    background: #161b22;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    transition: all 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+}
 
 .project {
     background: #161b22;
