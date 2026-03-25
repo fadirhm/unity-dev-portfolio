@@ -117,75 +117,85 @@ h2 {
     background: #2ea043;
 }
 
-/* ===== PROJECT PAGE ===== */
+/* ===== PROJECT PAGE (PREMIUM FIX) ===== */
 
-/* HERO SECTION */
+/* HERO */
 .project-hero {
     display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    margin-top: 20px;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
 /* IMAGE */
 .project-hero img {
     width: 320px;
-    border-radius: 12px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-/* SUMMARY TEXT */
+/* SUMMARY */
 .project-summary {
     flex: 1;
-    min-width: 250px;
+    min-width: 260px;
 }
 
 .project-summary p {
+    font-size: 15px;
+    line-height: 1.8;
     color: #c9d1d9;
-    line-height: 1.7;
 }
 
 /* SECTION CARD */
 .section-card {
     background: #161b22;
     border: 1px solid #30363d;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 14px;
+    padding: 22px;
     margin-top: 25px;
+    transition: 0.2s;
 }
 
-/* SECTION TITLE */
+/* HOVER EFFECT */
+.section-card:hover {
+    border-color: #58a6ff;
+    box-shadow: 0 8px 25px rgba(88,166,255,0.15);
+}
+
+/* FIX HEADING CONFLICT */
 .section-card h2 {
-    margin-top: 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
-    border-bottom: 1px solid #30363d;
-    padding-bottom: 6px;
+    border: none; /* 🔴 IMPORTANT FIX */
 }
 
 /* LIST */
 .section-card ul {
-    margin-top: 10px;
     padding-left: 20px;
 }
 
 .section-card li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    color: #c9d1d9;
 }
 
 /* BUTTON */
 .project-btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 10px 16px;
-    background: #238636;
+    margin-top: 35px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #238636, #2ea043);
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .project-btn:hover {
-    background: #2ea043;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(46,160,67,0.3);
 }
 
 /* BACK LINK */
