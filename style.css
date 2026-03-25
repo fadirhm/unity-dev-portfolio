@@ -116,3 +116,85 @@ h2 {
 .project a:hover {
     background: #2ea043;
 }
+
+/* ===== PROJECT PAGE ===== */
+
+/* HERO SECTION */
+.project-hero {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+.project-hero img {
+    width: 320px;
+    border-radius: 12px;
+}
+
+/* SUMMARY TEXT */
+.project-summary {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-summary p {
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+
+/* SECTION CARD */
+.section-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+/* SECTION TITLE */
+.section-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 6px;
+}
+
+/* LIST */
+.section-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.section-card li {
+    margin-bottom: 6px;
+}
+
+/* BUTTON */
+.project-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background: #238636;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.project-btn:hover {
+    background: #2ea043;
+}
+
+/* BACK LINK */
+.back-link {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
