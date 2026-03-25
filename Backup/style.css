@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* HEADER */
+h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: #8b949e;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+/* GRID (FIXED VERSION) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: start; /* 🔥 CRITICAL FIX */
+}
+
+/* PROJECT CARD */
+.project {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    transition: border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.project:hover {
+    border-color: #58a6ff;
+}
+
+/* IMAGE */
+.project-img {
+    width: 100%;
+    height: auto; /* ✅ no cropping */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+.project h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+/* SHORT DESCRIPTION */
+.short-desc {
+    color: #8b949e;
+    font-size: 14px;
+}
+
+/* EXPANDABLE CONTENT (FIXED) */
+.details {
+    display: none; /* ✅ no max-height issues */
+    margin-top: 10px;
+}
+
+.project.active .details {
+    display: block;
+}
+
+/* SECTION HEADINGS */
+.project h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #8b949e;
+    text-transform: uppercase;
+}
+
+/* LIST */
+.project ul {
+    padding-left: 18px;
+    margin: 5px 0;
+}
+
+.project li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/* BUTTON */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #238636;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.project a:hover {
+    background: #2ea043;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
