@@ -1,3 +1,4 @@
+/* ===== BASE ===== */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -5,14 +6,14 @@ body {
     color: #e6edf3;
 }
 
-/* CONTAINER */
+/* ===== CONTAINER ===== */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 h1 {
     font-size: 34px;
     margin-bottom: 5px;
@@ -23,7 +24,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* SECTION TITLE */
+/* ===== SECTION TITLE ===== */
 h2 {
     margin-top: 40px;
     font-size: 22px;
@@ -31,52 +32,60 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* GRID */
+/* ===================================================== */
+/* ================= PROJECT GRID ======================= */
+/* ===================================================== */
+
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 🔥 MORE CARDS PER ROW */
+    gap: 16px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .project {
     background: #161b22;
-    padding: 18px;
+    padding: 16px;
     border-radius: 14px;
     border: 1px solid #30363d;
-    transition: 0.25s;
-}
-
-.project:hover {
-    transform: translateY(-6px);
-    border-color: #58a6ff;
-    box-shadow: 0 10px 30px rgba(88,166,255,0.2);
-}
-
-/* HEADER ROW */
-.project-header {
+    transition: 0.25s ease;
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    gap: 10px;
 }
 
+/* HOVER EFFECT */
+.project:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 10px 25px rgba(88,166,255,0.2);
+}
+
+/* ===== ICON ===== */
 .project-icon {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     object-fit: cover;
 }
 
-/* TEXT */
-.short-desc {
-    color: #8b949e;
-    font-size: 13px;
+/* ===== TITLE ===== */
+.project h3 {
+    font-size: 14px;
+    margin: 5px 0;
 }
 
+/* ===== DESCRIPTION ===== */
+.short-desc {
+    font-size: 12px;
+    color: #8b949e;
+}
+
+/* ===== TAGS ===== */
 .tags {
     display: flex;
-    gap: 6px;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 .tag {
@@ -84,26 +93,31 @@ h2 {
     color: #58a6ff;
     padding: 4px 8px;
     border-radius: 6px;
-    font-size: 11px;
+    font-size: 10px;
 }
 
-/* BUTTON */
+/* ===== BUTTON ===== */
 .project a {
-    margin-top: 12px;
-    display: inline-block;
+    margin-top: auto;
     background: #238636;
     color: white;
-    padding: 7px 12px;
+    padding: 8px;
+    text-align: center;
     border-radius: 6px;
     text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s;
 }
 
 .project a:hover {
     background: #2ea043;
 }
 
-/* ===== PROJECT PAGE ===== */
+/* ===================================================== */
+/* ================= PROJECT PAGE ======================= */
+/* ===================================================== */
 
+/* HERO SECTION */
 .project-hero {
     display: flex;
     gap: 40px;
@@ -111,12 +125,14 @@ h2 {
     margin-top: 30px;
 }
 
+/* IMAGE */
 .project-hero img {
-    width: 320px;
+    width: 300px;
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
+/* SUMMARY */
 .project-summary {
     flex: 1;
     min-width: 250px;
@@ -125,40 +141,67 @@ h2 {
 .project-summary p {
     color: #c9d1d9;
     line-height: 1.7;
+    font-size: 14px;
 }
 
+/* SECTION CARD */
 .section-card {
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 14px;
     padding: 20px;
     margin-top: 25px;
+    transition: 0.2s;
 }
 
+/* HOVER EFFECT */
+.section-card:hover {
+    border-color: #58a6ff;
+    box-shadow: 0 8px 20px rgba(88,166,255,0.15);
+}
+
+/* FIX HEADING CONFLICT */
 .section-card h2 {
     border: none;
     margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+/* LIST */
+.section-card ul {
+    padding-left: 20px;
 }
 
 .section-card li {
     margin-bottom: 6px;
+    color: #c9d1d9;
 }
 
+/* BUTTON */
 .project-btn {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 18px;
-    background: #238636;
+    background: linear-gradient(135deg, #238636, #2ea043);
     border-radius: 8px;
     color: white;
     text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
 }
 
 .project-btn:hover {
-    background: #2ea043;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(46,160,67,0.3);
 }
 
+/* BACK LINK */
 .back-link {
     color: #58a6ff;
     text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
 }
