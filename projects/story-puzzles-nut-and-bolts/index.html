@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Story Puzzles: Nut and Bolts</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🧩 Story Puzzles: Nut and Bolts</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/StoryPuzzleIMG.webp" alt="Story Puzzles Nut and Bolts">
+
+        <div class="project-summary">
+            <p>
+                A 2.5D story-driven puzzle game where players solve mechanical screw puzzles by
+                strategically removing nuts and bolts from interconnected structures. Built as a solo
+                project focused on puzzle mechanics, level systems, and responsive interactive feedback.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Core unscrew interaction system for selecting, removing, and relocating connected pieces</li>
+            <li>Structural dependency logic to validate whether components can be detached safely</li>
+            <li>Powerup implementations: bomb vibration impulse, reverse undo flow, and destroy obstacle removal</li>
+            <li>Interactive feedback stack combining visual cues, motion transitions, and contextual UI prompts</li>
+            <li>Progression-linked star reward loop connected to house rebuild milestones</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Puzzle state manager tracking bolt dependencies, blocked paths, and completion conditions</li>
+            <li>Undo pipeline for reverse actions with smooth transitional interpolation and state restoration</li>
+            <li>Level progression architecture supporting 80+ handcrafted levels and boss challenge stages</li>
+            <li>Meta progression loop using star accumulation to unlock narrative rebuild sequences</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Not NPC-driven; gameplay is based on deterministic puzzle-state simulation</li>
+            <li>Rule-based interaction evaluator replacing character AI with constraint-solving logic</li>
+            <li>Event sequencing system coordinating puzzle outcomes, effects, and progression triggers</li>
+            <li>Configurable puzzle behavior profiles enabling scalable level authoring without code changes</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Object pooling for bolts, effects, helper UI elements, and transition props</li>
+            <li>State-diff updates to avoid full puzzle recomputation after each interaction</li>
+            <li>Optimized input and feedback pipeline for consistent responsiveness on mobile devices</li>
+            <li>Data-driven level definitions reducing scene duplication and iteration overhead</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom puzzle-state architecture</li>
+            <li>Physics-based interaction feedback systems</li>
+            <li>DOTween</li>
+            <li>ScriptableObject-driven level and powerup configuration</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for architecture, puzzle systems, and full implementation</li>
+            <li>Designed level progression, powerup mechanics, and interaction feedback loops</li>
+            <li>Built scalable tooling for handcrafted level production and balancing workflows</li>
+            <li>Integrated gameplay progression with narrative house rebuild meta objectives</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://apkpure.com/pin-master-nuts-and-bolts-3d/com.puzzle.wood.nut.nutandbolt.screw.story"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Store
+    </a>
+
+</div>
+
+</body>
+</html>
