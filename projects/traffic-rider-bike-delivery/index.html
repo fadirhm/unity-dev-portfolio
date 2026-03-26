@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traffic Rider: Bike Delivery</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🏍 Traffic Rider: Bike Delivery</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/TrafficRiderIMG.webp" alt="Traffic Rider Bike Delivery">
+
+        <div class="project-summary">
+            <p>
+                A city-based bike delivery simulation focused on mission flow and traffic interaction
+                without narrative systems. Built as a streamlined version of an open-world delivery
+                architecture with emphasis on performance, scalability, and continuous gameplay.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Custom bike controller tuned for responsive acceleration, braking, and lane-level precision</li>
+            <li>Traffic-integrated delivery mission system with dynamic pickup and drop-off sequencing</li>
+            <li>Vehicle interaction layer aligned with city traffic rules and route-based objective tracking</li>
+            <li>Reusable mission definitions enabling rapid level and objective iteration</li>
+            <li>Centralized gameplay flow manager handling retries, rewards, and mission transitions</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Continuous delivery loop: assign mission → navigate traffic → complete handoff → chain next task</li>
+            <li>Route and checkpoint validation pipeline for reliable mission completion events</li>
+            <li>Difficulty scaling through delivery distance, timing windows, and traffic density</li>
+            <li>Session progression model designed for short, repeatable high-engagement gameplay cycles</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Manager-driven NPC orchestration for predictable updates across dense city regions</li>
+            <li>Traffic agent behavior states for cruise, stop, yield, and obstruction reactions</li>
+            <li>Spawn balancing based on player zone and speed to maintain consistent world activity</li>
+            <li>Lightweight AI profiles for stable simulation under mission-heavy runtime conditions</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Object pooling for NPCs, traffic vehicles, mission props, and effects to minimize allocations</li>
+            <li>Distance-based activation and recycling to control CPU load in open city traversal</li>
+            <li>Centralized manager logic replacing per-object heavy update patterns</li>
+            <li>Data-driven mission and traffic tuning for scalable content without scene duplication</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Traffic simulation system</li>
+            <li>Custom bike controller framework</li>
+            <li>Object pooling architecture</li>
+            <li>ScriptableObject-driven gameplay configuration</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for architecture, implementation, and gameplay balancing</li>
+            <li>Designed mission flow, traffic interaction systems, and controller behavior</li>
+            <li>Built manager-driven AI and pooling systems for stable mobile performance</li>
+            <li>Executed profiling and optimization passes to maintain continuous gameplay responsiveness</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://play.google.com/store/apps/details?id=com.MustankStudios.UrbanFoodDelivery"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Google Play
+    </a>
+
+</div>
+
+</body>
+</html>
