@@ -1,0 +1,6 @@
+Add project cover image here:
+CarStackRunner3DIMG.webp
+
+Note:
+An existing file named CarStackyRunner3DIMG.webp is in this project root.
+Move/rename it into this images folder if needed.

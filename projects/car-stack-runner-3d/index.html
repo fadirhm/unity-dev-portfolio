@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Stack Runner 3D: Car Games</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🚗 Car Stack Runner 3D: Car Games</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/CarStackRunner3DIMG.webp" alt="Car Stack Runner 3D">
+
+        <div class="project-summary">
+            <p>
+                A runner-style driving game that combines fast-paced movement with strategic resource
+                management through math-based mechanics. Built as a solo project with a focus on
+                scalable level systems, smooth controller behavior, and optimized gameplay loops.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Custom runner car controller with stable lane movement, speed ramping, and obstacle handling</li>
+            <li>Math-gate system supporting multiplier, divider, addition, and subtraction stack operations</li>
+            <li>Stack collection pipeline with deterministic value updates and real-time UI feedback</li>
+            <li>Reusable obstacle modules for rapid track composition and difficulty progression</li>
+            <li>Level content setup tools for quick iteration across multiple challenge patterns</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Continuous run loop: collect stacks → pass math gates → avoid hazards → finish conversion</li>
+            <li>Gate resolver architecture applying ordered arithmetic operations without frame-dependent drift</li>
+            <li>Progression manager scaling gate complexity, obstacle density, and target thresholds per level</li>
+            <li>Fail/retry flow with lightweight state resets for rapid repeat sessions</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Manager-coordinated moving obstacle logic for predictable runtime updates</li>
+            <li>Pattern-driven hazard behaviors with configurable timing and lane occupancy windows</li>
+            <li>Spawn orchestration ensuring fair challenge distribution across level segments</li>
+            <li>Data-defined behavior profiles to tune difficulty without code-level modifications</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Object pooling for gates, pickups, hazards, and VFX to prevent frequent allocations</li>
+            <li>Segment-based activation to reduce per-frame processing outside active player range</li>
+            <li>Centralized update loops replacing heavy per-object polling patterns</li>
+            <li>Data-driven level definitions minimizing scene duplication and maintenance overhead</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom runner controller framework</li>
+            <li>Math-gate and stack processing systems</li>
+            <li>Object pooling architecture</li>
+            <li>ScriptableObject-based level configuration</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for architecture, implementation, and gameplay balancing</li>
+            <li>Built controller logic, arithmetic gate systems, and progression framework</li>
+            <li>Designed scalable content pipelines for rapid level authoring and testing</li>
+            <li>Optimized runtime systems for smooth performance across extended play sessions</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://play.google.com/store/apps/details?id=com.mustank.car.stack.runner"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Google Play
+    </a>
+
+</div>
+
+</body>
+</html>
