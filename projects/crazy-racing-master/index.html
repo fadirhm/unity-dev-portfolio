@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crazy Racing Master: Car Game</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🏎 Crazy Racing Master: Car Game</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/CrazyRacingMasterIMG.webp" alt="Crazy Racing Master">
+
+        <div class="project-summary">
+            <p>
+                A spline-based racing game built around fast-paced lane-switching mechanics and custom
+                hover-style vehicle physics. Developed as a solo project with a strong focus on
+                performance optimization, scalable level systems, and responsive gameplay flow.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Custom hover-style vehicle controller with tuned acceleration, drag, and drift response</li>
+            <li>Lane-switching input system with buffered transitions for high-speed control stability</li>
+            <li>Modular upgrade pipeline for speed, handling, and boost progression</li>
+            <li>Vehicle customization layer for interchangeable visual and gameplay-affecting parts</li>
+            <li>Track obstacle framework supporting reusable hazard patterns and pacing profiles</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Spline-driven race loop with deterministic path sampling for smooth lane alignment</li>
+            <li>Continuous progression across 50+ levels with difficulty scaling by segment configuration</li>
+            <li>Race state manager handling fail, retry, completion, and reward transitions</li>
+            <li>Economy flow integrating upgrade costs, unlock conditions, and level gating</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Spline-follow traffic agents with lane occupancy checks and speed variance control</li>
+            <li>Lightweight behavior states for cruising, lane change, and collision avoidance reactions</li>
+            <li>Spawn manager balancing active traffic density based on player speed and track segment type</li>
+            <li>Reusable bot configuration profiles for predictable balancing across level tiers</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Object pooling for traffic cars, obstacles, effects, and UI prompts to avoid GC spikes</li>
+            <li>Segment-based activation and culling to reduce runtime overhead on long tracks</li>
+            <li>Centralized update scheduling for non-critical systems to improve frame consistency</li>
+            <li>Data-driven level definitions reducing scene duplication and build maintenance cost</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Spline-based track system</li>
+            <li>Custom vehicle physics framework</li>
+            <li>DOTween</li>
+            <li>ScriptableObject-driven configuration</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for gameplay architecture, systems design, and implementation</li>
+            <li>Built vehicle controller physics, progression framework, and level content pipelines</li>
+            <li>Designed optimization strategy for stable performance across extended race sessions</li>
+            <li>Balanced gameplay feel through iterative telemetry-driven tuning and testing</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://play.google.com/store/apps/details?id=com.ms.race.racing.car.master"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Google Play
+    </a>
+
+</div>
+
+</body>
+</html>
