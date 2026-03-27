@@ -62,14 +62,45 @@ h2 {
 /* ===== HOME: PROJECTS ROW (PLAY-STORE STYLE) ===== */
 .projects-section-head {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
     margin-top: 42px;
     margin-bottom: 6px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     border-bottom: 1px solid var(--border);
+}
+
+.projects-section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.projects-section-intro {
+    min-width: 0;
+}
+
+.projects-company-label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+}
+
+.projects-company-label--page {
+    margin-bottom: 4px;
+}
+
+.projects-company-note {
+    margin: 0;
+    max-width: 62ch;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--text-muted);
 }
 
 h2.projects-heading {
