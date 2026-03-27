@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 /* ===== DESIGN TOKENS ===== */
 :root {
     --header-bar-height: 88px;
@@ -18,7 +20,7 @@
 body {
     margin: 0;
     padding-top: var(--header-bar-height);
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -32,10 +34,10 @@ body {
 
 /* ===== SITE HEADER (all pages) ===== */
 .site-header {
-    --header-name: #88c0d0;
-    --header-role: #f0f6fc;
-    --header-accent: #e8a8b8;
-    --header-bio: #e8a8b8;
+    --header-name: #7ec9d4;
+    --header-role: #ffffff;
+    --header-accent: #e8b4be;
+    --header-bio: #e8b4be;
 }
 
 .site-header__sticky {
@@ -46,20 +48,17 @@ body {
     z-index: 250;
     min-height: var(--header-bar-height);
     box-sizing: border-box;
-    background: linear-gradient(180deg, rgba(30, 32, 38, 0.97) 0%, rgba(16, 16, 20, 0.98) 100%);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 2px solid rgba(232, 168, 184, 0.35);
-    box-shadow:
-        0 1px 0 rgba(255, 255, 255, 0.06) inset,
-        0 8px 32px rgba(0, 0, 0, 0.55),
-        0 0 48px rgba(136, 192, 208, 0.06);
+    background: #121212;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(232, 180, 190, 0.2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .site-header__inner {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 18px 32px;
+    padding: 16px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +73,7 @@ body {
 .site-header__brand {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
     text-decoration: none;
     color: inherit;
     min-width: 0;
@@ -91,49 +90,51 @@ body {
 }
 
 .site-header__name {
-    font-size: clamp(1.5rem, 3.4vw, 2.05rem);
+    font-size: clamp(1.45rem, 3.2vw, 1.95rem);
     font-weight: 800;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.03em;
     color: var(--header-name);
-    line-height: 1.08;
-    text-shadow: 0 0 28px rgba(136, 192, 208, 0.22);
+    line-height: 1.1;
 }
 
 .site-header__role {
-    font-size: clamp(0.85rem, 2vw, 0.95rem);
-    font-weight: 600;
+    font-size: clamp(0.8rem, 1.85vw, 0.9rem);
+    font-weight: 500;
     color: var(--header-role);
-    opacity: 0.95;
-    letter-spacing: 0.02em;
+    opacity: 0.92;
+    letter-spacing: 0.01em;
 }
 
 /* Home-only hero: photo + bio (lives inside .container; same vars as .site-header for accents) */
 .site-header__hero {
-    --header-accent: #e8a8b8;
-    --header-bio: #e8a8b8;
+    --header-accent: #e8b4be;
+    --header-bio: #e8b4be;
     background: #121212;
-    border-bottom: 1px solid rgba(232, 168, 184, 0.15);
+    border-bottom: 1px solid rgba(232, 180, 190, 0.14);
 }
 
 .site-header__hero-inner {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 36px 28px 44px;
+    padding: 40px 32px 48px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: clamp(28px, 5vw, 52px);
+    gap: clamp(40px, 6vw, 56px);
     flex-wrap: wrap;
 }
 
 .site-header__avatar-wrap {
     flex-shrink: 0;
-    width: clamp(140px, 28vw, 200px);
-    height: clamp(140px, 28vw, 200px);
-    padding: 3px;
+    width: clamp(152px, 28vw, 208px);
+    height: clamp(152px, 28vw, 208px);
+    padding: 0;
     border-radius: 50%;
-    background: linear-gradient(145deg, var(--header-accent), rgba(232, 168, 184, 0.35));
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--header-accent);
+    background: #141414;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.35);
 }
 
 .site-header__avatar {
@@ -142,18 +143,19 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 50%;
-    border: 2px solid #121212;
+    border: none;
     background: #1a1a1c;
 }
 
 .site-header__bio {
     margin: 0;
     flex: 1;
-    min-width: min(100%, 220px);
-    max-width: 52ch;
-    font-size: clamp(0.95rem, 1.9vw, 1.08rem);
-    line-height: 1.65;
-    font-weight: 500;
+    min-width: min(100%, 240px);
+    max-width: 56ch;
+    font-size: clamp(0.94rem, 1.85vw, 1.06rem);
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.01em;
     color: var(--header-bio);
 }
 
@@ -344,7 +346,7 @@ html {
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 44px 28px 72px;
+    padding: 44px 32px 72px;
 }
 
 /* ===== HEADER ===== */
