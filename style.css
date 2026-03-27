@@ -582,9 +582,10 @@ p.projects-heading {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 220px)); /* fixed card width, no stretch */
-    gap: 22px;
-    justify-content: start; /* align left */
+    /* ~6 cards per row at max-width 1100px (inner ~1044px): (1044 - 5×gap) / 6 ≈ 158px track */
+    grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+    gap: 14px;
+    justify-content: stretch;
     align-items: stretch;
 }
 
@@ -594,7 +595,45 @@ p.projects-heading {
 
 .projects-grid .project {
     width: 100%;
-    max-width: 220px;
+    max-width: none;
+    border-radius: 14px;
+}
+
+.projects-grid .project-cover {
+    height: 92px;
+}
+
+.projects-grid .project-body {
+    padding: 10px 10px 6px;
+}
+
+.projects-grid .project h3 {
+    font-size: 0.78rem;
+    line-height: 1.3;
+    margin: 0 0 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects-grid .tags {
+    gap: 4px;
+    margin-bottom: 0;
+}
+
+.projects-grid .tag {
+    font-size: 0.58rem;
+    padding: 3px 6px;
+}
+
+.projects-grid .project-btn-small {
+    margin: 8px;
+    margin-top: auto;
+    padding: 7px 8px;
+    font-size: 0.65rem;
+    border-radius: 7px;
 }
 
 .project {
@@ -822,8 +861,8 @@ p.projects-heading {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
-        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
     }
 
     .projects-carousel {
