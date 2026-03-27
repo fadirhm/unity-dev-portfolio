@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Light Sort</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>💡 Light Sort</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/LightSortIMG.webp" alt="Light Sort">
+
+        <div class="project-summary">
+            <p>
+                A 2.5D puzzle game centered on rotating and sequencing connected bulbs so power flows
+                across the full chain. The gameplay emphasizes state-based puzzle solving, precision input,
+                and increasing logical complexity across progressively designed levels.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Bulb rotation system with connection validation based on directional alignment states</li>
+            <li>Sequence-check pipeline that lights bulbs only when the complete chain is resolved correctly</li>
+            <li>Difficulty-scaling level logic introducing more branches and ordering constraints per stage</li>
+            <li>Smooth movement and transitions integrated with Dreamteck Splines for bulb path behavior</li>
+            <li>Visual feedback loop reinforcing valid/invalid states during player interaction</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Deterministic puzzle-state evaluation for robust and repeatable solve validation</li>
+            <li>Modular level architecture supporting rapid expansion of puzzle patterns and difficulty tiers</li>
+            <li>Input-to-state synchronization ensuring responsive rotation behavior without desync</li>
+            <li>Progression loop designed around short, high-focus puzzle sessions with steady complexity growth</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Lightweight state checks minimizing per-frame overhead on mobile devices</li>
+            <li>Componentized puzzle units enabling maintainable scaling across many handcrafted levels</li>
+            <li>Structured editor workflows with Odin Inspector for faster tuning and debugging</li>
+            <li>DOTween-based UI transitions for performant and consistent visual polish</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Dreamteck Splines</li>
+            <li>Odin Inspector</li>
+            <li>DOTween</li>
+            <li>Custom puzzle-state and connection-validation systems</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for gameplay architecture, implementation, and balancing</li>
+            <li>Designed core rotation/connection logic and progressive puzzle difficulty structure</li>
+            <li>Built reusable level workflows to speed up iteration and content production</li>
+            <li>Implemented interaction feedback and UI transitions for clear player guidance</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://apkpure.com/light-sort-puzzle-game/com.lightsort.bulbsort.puzzle"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Store
+    </a>
+
+</div>
+
+</body>
+</html>
