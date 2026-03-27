@@ -102,8 +102,10 @@ body {
     opacity: 0.92;
 }
 
-/* Home-only hero: photo + bio (reference layout) */
+/* Home-only hero: photo + bio (lives inside .container; same vars as .site-header for accents) */
 .site-header__hero {
+    --header-accent: #e8a8b8;
+    --header-bio: #e8a8b8;
     background: #121212;
     border-bottom: 1px solid rgba(232, 168, 184, 0.15);
 }

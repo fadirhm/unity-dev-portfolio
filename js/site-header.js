@@ -106,8 +106,23 @@
         "</nav>" +
         "</div>" +
         "</div>" +
-        heroBlock +
         "</header>";
 
     document.body.insertAdjacentHTML("afterbegin", html);
+
+    /* Hero goes inside .container after DOM is parsed (script runs before .container exists) */
+    function injectHomeHero() {
+        if (!heroBlock) {
+            return;
+        }
+        var container = document.querySelector(".container");
+        if (container) {
+            container.insertAdjacentHTML("afterbegin", heroBlock);
+        }
+    }
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", injectHomeHero);
+    } else {
+        injectHomeHero();
+    }
 })();
