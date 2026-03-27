@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger Dash: Fast Food Frenzy</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🍔 Burger Dash: Fast Food Frenzy</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/BurgerDashIMG.webp" alt="Burger Dash Fast Food Frenzy">
+
+        <div class="project-summary">
+            <p>
+                A 2D time-management game focused on high-speed food assembly under strict countdown constraints.
+                Players complete customer-specific item sequences while penalty-driven mistakes reduce remaining time,
+                creating a fast decision-making and quick-response gameplay loop.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Order assembly system validating ingredient selection against dynamic customer requirements</li>
+            <li>Penalty pipeline that subtracts time on invalid input to increase pressure and difficulty</li>
+            <li>Puzzle-level mode requiring memorization and delayed reconstruction of hidden order data</li>
+            <li>Boss-level mechanics supporting multi-order concurrency with rapidly shifting ingredient sets</li>
+            <li>Powerup systems for time extension, time freeze, and temporary auto-combine assistance</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Countdown-driven gameplay loop integrating order queue, validation, and fail-state transitions</li>
+            <li>Level architecture supporting 100 stages with normal, puzzle, and boss difficulty profiles</li>
+            <li>Order comparison logic that matches expected customer sequence against player-generated output</li>
+            <li>Adaptive input context that updates selectable ingredient sets per active order definition</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Not NPC-AI driven; gameplay is based on deterministic order-rule evaluation</li>
+            <li>State-oriented order manager orchestrating request generation, validation, and completion checks</li>
+            <li>Configurable customer-order templates enabling scalable variation without code duplication</li>
+            <li>Event-driven flow control for powerups, penalties, and level outcome resolution</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>ScriptableObject-driven level data pipeline simplifying design iteration and content scaling</li>
+            <li>Data-based order templates reducing hardcoded logic across 100+ gameplay scenarios</li>
+            <li>Lightweight state transitions optimized for responsive input and rapid UI feedback</li>
+            <li>Modular gameplay components enabling maintainable expansion of modes and powerups</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>ScriptableObject-based level and order configuration</li>
+            <li>Custom order validation and gameplay state management</li>
+            <li>Powerup effect systems and timed gameplay controllers</li>
+            <li>UI feedback and transition tooling</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for gameplay architecture, implementation, and balancing</li>
+            <li>Built order systems, puzzle/boss mode logic, and powerup mechanics</li>
+            <li>Designed scalable level-authoring workflows using ScriptableObject data definitions</li>
+            <li>Tuned timing, penalties, and progression for consistent challenge pacing</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://apkpure.com/burger-ready-order-rush/com.burger.ready.dreamburger"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Store
+    </a>
+
+</div>
+
+</body>
+</html>
