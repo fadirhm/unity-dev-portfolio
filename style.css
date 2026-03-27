@@ -547,6 +547,74 @@ h2 {
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
 }
 
+.projects-section-intro__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px 24px;
+}
+
+.projects-section-intro__titles {
+    min-width: 0;
+    flex: 1;
+}
+
+.company-tenure {
+    margin: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    text-align: right;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(88, 166, 255, 0.38);
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.12) 0%, rgba(15, 20, 28, 0.92) 100%);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+}
+
+.company-tenure__label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.company-tenure__range {
+    font-size: clamp(0.92rem, 2.1vw, 1.05rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #b8d9ff;
+    line-height: 1.25;
+}
+
+.company-tenure__dates {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+}
+
+.company-tenure__dates time {
+    font-weight: 600;
+    color: inherit;
+}
+
+@media (max-width: 560px) {
+    .company-tenure {
+        align-items: flex-start;
+        text-align: left;
+        align-self: stretch;
+        width: 100%;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 14px;
+    }
+}
+
 .projects-company-title {
     margin: 0 0 8px;
     padding: 0;
