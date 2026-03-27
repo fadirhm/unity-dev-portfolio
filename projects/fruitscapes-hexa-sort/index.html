@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fruitscapes: Hexa Sort Game</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🍓 Fruitscapes: Hexa Sort Game</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/FruitscapesIMG.webp" alt="Fruitscapes Hexa Sort Game">
+
+        <div class="project-summary">
+            <p>
+                A 3D puzzle game built around a grid-based hexagonal sorting and merging system.
+                Developed as a solo project with strong focus on recursive algorithm design, scalable level
+                architecture, and optimized runtime performance for smooth chain-reaction gameplay.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Hex-grid placement system for organizing fruit tiles across dynamic board configurations</li>
+            <li>Custom recursive traversal algorithm to detect adjacent matching groups safely</li>
+            <li>Visited-node tracking to prevent cyclic traversal and ensure deterministic search behavior</li>
+            <li>Merge propagation system that resolves matched clusters back through traversal paths</li>
+            <li>Powerup and booster integration for complex-board recovery and strategic decision support</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Grid state manager handling tile placement, stack updates, and merge eligibility checks</li>
+            <li>Asynchronous neighbor-evaluation tasks processing independent branches concurrently</li>
+            <li>Chain-reaction resolution pipeline coordinating merge sequencing and visual continuity</li>
+            <li>Progression loop with star rewards used to restore story-driven environment elements</li>
+        </ul>
+    </div>
+
+    <!-- AI & NPC ARCHITECTURE -->
+    <div class="section-card">
+        <h2>AI & NPC Architecture</h2>
+        <ul>
+            <li>Not NPC-driven; gameplay uses deterministic rule-based puzzle-state simulation</li>
+            <li>Recursive node-evaluation engine replaces character AI with graph traversal logic</li>
+            <li>Task orchestration layer schedules branch checks to maintain frame-stable responsiveness</li>
+            <li>Configurable rule sets allow scalable level behaviors without gameplay code changes</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Asynchronous branch processing for neighbor checks to reduce single-frame compute spikes</li>
+            <li>Early-exit traversal guards and visited caching to avoid redundant recursive exploration</li>
+            <li>Data-driven level layouts supporting dynamic complexity without scene duplication</li>
+            <li>Mobile-focused optimization for merge, feedback, and UI update pipelines</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom recursive grid traversal architecture</li>
+            <li>Asynchronous task-based branch evaluation</li>
+            <li>DOTween for UI and feedback animation systems</li>
+            <li>Odin Inspector for structured editor workflows</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for architecture, algorithms, and gameplay system implementation</li>
+            <li>Designed recursive merge detection, async traversal flow, and chain-reaction resolution logic</li>
+            <li>Built scalable level progression supporting 80+ handcrafted levels and boss challenges</li>
+            <li>Integrated boosters, progression rewards, and narrative-linked restoration systems</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://apkpure.com/fruit-up-hexa-sort-master/com.fruitagon.hexasort.hexa.stack.sort"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Store
+    </a>
+
+</div>
+
+</body>
+</html>
