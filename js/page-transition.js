@@ -5,7 +5,6 @@
  */
 (function () {
     var STORAGE_KEY = "portfolioNavDir";
-    var STORAGE_SKIP_ENTER = "portfolioNavSkipEnter";
     var shellClass = "page-transition-shell";
     var TRANSITION_MS = 520;
 
@@ -117,14 +116,12 @@
         var shell = document.querySelector("." + shellClass);
         if (!shell || prefersReducedMotion()) {
             try {
-                sessionStorage.removeItem(STORAGE_SKIP_ENTER);
                 sessionStorage.setItem(STORAGE_KEY, dir);
             } catch (e) {}
             window.location.href = href;
             return;
         }
         try {
-            sessionStorage.setItem(STORAGE_SKIP_ENTER, "1");
             sessionStorage.setItem(STORAGE_KEY, dir);
         } catch (e) {}
 
@@ -192,19 +189,6 @@
     window.addEventListener("DOMContentLoaded", function () {
         var shell = wrapShell();
         if (!shell) {
-            return;
-        }
-
-        var skipEnter = false;
-        try {
-            skipEnter = sessionStorage.getItem(STORAGE_SKIP_ENTER) === "1";
-            if (skipEnter) {
-                sessionStorage.removeItem(STORAGE_SKIP_ENTER);
-                sessionStorage.removeItem(STORAGE_KEY);
-            }
-        } catch (e) {}
-
-        if (skipEnter) {
             return;
         }
 
