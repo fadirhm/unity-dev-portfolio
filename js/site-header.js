@@ -34,12 +34,12 @@
 
     function profileImgSrc() {
         if (BASE) {
-            return BASE + "/images/profile.png";
+            return BASE + "/images/profile.jpg";
         }
         if (location.pathname.indexOf("/projects/") !== -1) {
-            return "../../images/profile.png";
+            return "../../images/profile.jpg";
         }
-        return "images/profile.png";
+        return "images/profile.jpg";
     }
 
     /** Full hero (photo + bio) only on main portfolio landing — not on project pages or all-projects */
@@ -86,7 +86,7 @@
         homeHref() +
         '">' +
         '<span class="site-header__name">Fadi</span>' +
-        '<span class="site-header__role">Gameplay Programmer</span>' +
+        '<span class="site-header__role">Unity Developer</span>' +
         "</a>" +
         '<nav class="site-header__nav" aria-label="Social and resume">' +
         '<a class="site-header__icon-link" href="' +

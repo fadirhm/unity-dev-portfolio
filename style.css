@@ -1,5 +1,6 @@
 /* ===== DESIGN TOKENS ===== */
 :root {
+    --header-bar-height: 72px;
     --bg: #0d1117;
     --surface: #161b22;
     --surface-soft: #141a21;
@@ -16,6 +17,7 @@
 /* ===== BASE ===== */
 body {
     margin: 0;
+    padding-top: var(--header-bar-height);
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: var(--bg);
     color: var(--text);
@@ -37,9 +39,13 @@ body {
 }
 
 .site-header__sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 200;
+    left: 0;
+    right: 0;
+    z-index: 250;
+    min-height: var(--header-bar-height);
+    box-sizing: border-box;
     background: rgba(18, 18, 18, 0.94);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -207,6 +213,10 @@ body {
 }
 
 @media (max-width: 680px) {
+    :root {
+        --header-bar-height: 88px;
+    }
+
     .site-header__inner {
         padding: 12px 16px;
     }
@@ -242,19 +252,19 @@ html {
 }
 
 .page-transition-shell.pt-exit-forward {
-    animation: pt-exit-left 0.38s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: pt-exit-left 0.72s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .page-transition-shell.pt-exit-back {
-    animation: pt-exit-right 0.38s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: pt-exit-right 0.72s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .page-transition-shell.pt-enter-forward {
-    animation: pt-enter-from-right 0.42s cubic-bezier(0.32, 0.72, 0, 1) both;
+    animation: pt-enter-from-right 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
 
 .page-transition-shell.pt-enter-back {
-    animation: pt-enter-from-left 0.42s cubic-bezier(0.32, 0.72, 0, 1) both;
+    animation: pt-enter-from-left 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
 
 @keyframes pt-exit-left {
@@ -302,7 +312,7 @@ html {
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 72px 28px;
+    padding: 44px 28px 72px;
 }
 
 /* ===== HEADER ===== */
@@ -798,7 +808,7 @@ p.projects-heading {
 
 @media (max-width: 680px) {
     .container {
-        padding: 54px 16px;
+        padding: 36px 16px 54px;
     }
 
     .projects-section-intro {
