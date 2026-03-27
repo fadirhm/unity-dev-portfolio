@@ -74,7 +74,7 @@
             profileImgSrc() +
             '" alt="Portrait of Fahad Ansari" width="200" height="200" loading="eager" decoding="async">' +
             "</div>" +
-            '<p class="site-header__bio">Unity and gameplay programmer specializing in systems architecture and player-facing mechanics — focused on efficient C#, scalable tooling, and shipping polished mobile games.</p>' +
+            '<p class="site-header__bio">Unity gameplay programmer specializing in scalable systems architecture and player-centric mechanics. Focused on building performant C# systems, modular tooling, and shipping polished mobile games with efficient and maintainable code.</p>' +
             "</div>" +
             "</div>";
     }
