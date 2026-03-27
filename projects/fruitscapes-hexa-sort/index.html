@@ -55,19 +55,10 @@
         <ul>
             <li>Grid state manager handling tile placement, stack updates, and merge eligibility checks</li>
             <li>Asynchronous neighbor-evaluation tasks processing independent branches concurrently</li>
+            <li>Deterministic rule-based puzzle-state simulation for reliable merge and resolution outcomes</li>
             <li>Chain-reaction resolution pipeline coordinating merge sequencing and visual continuity</li>
+            <li>Configurable rule sets enabling scalable level behaviors without gameplay code changes</li>
             <li>Progression loop with star rewards used to restore story-driven environment elements</li>
-        </ul>
-    </div>
-
-    <!-- AI & NPC ARCHITECTURE -->
-    <div class="section-card">
-        <h2>AI & NPC Architecture</h2>
-        <ul>
-            <li>Not NPC-driven; gameplay uses deterministic rule-based puzzle-state simulation</li>
-            <li>Recursive node-evaluation engine replaces character AI with graph traversal logic</li>
-            <li>Task orchestration layer schedules branch checks to maintain frame-stable responsiveness</li>
-            <li>Configurable rule sets allow scalable level behaviors without gameplay code changes</li>
         </ul>
     </div>
 
@@ -75,6 +66,7 @@
     <div class="section-card">
         <h2>Performance & Optimization</h2>
         <ul>
+            <li>Task orchestration layer schedules branch checks to maintain frame-stable responsiveness</li>
             <li>Asynchronous branch processing for neighbor checks to reduce single-frame compute spikes</li>
             <li>Early-exit traversal guards and visited caching to avoid redundant recursive exploration</li>
             <li>Data-driven level layouts supporting dynamic complexity without scene duplication</li>
