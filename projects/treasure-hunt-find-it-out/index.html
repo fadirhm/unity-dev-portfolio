@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Treasure Hunt: Find It Out</title>
+
+    <!-- ✅ FIXED PATH FOR GITHUB -->
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BACK -->
+    <a href="/unity-dev-portfolio/index.html" class="back-link">
+        ⬅ Back to Portfolio
+    </a>
+
+    <!-- TITLE -->
+    <h1>🕵 Treasure Hunt: Find It Out</h1>
+
+    <!-- HERO -->
+    <div class="project-hero">
+
+        <img src="images/TreasureHuntIMG.webp" alt="Treasure Hunt Find It Out">
+
+        <div class="project-summary">
+            <p>
+                A hidden-object puzzle experience built around visual search accuracy, map-based progression,
+                and increasing scene complexity. Players identify target items across diverse environments while
+                unlocking new regions and section gates through objective completion.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHAT I BUILT -->
+    <div class="section-card">
+        <h2>What I Built</h2>
+        <ul>
+            <li>Core hidden-object detection loop with target list tracking and completion validation</li>
+            <li>Scene interaction pipeline supporting item reveal, tap feedback, and mistake handling</li>
+            <li>Hint assist system to guide players during high-density object search scenarios</li>
+            <li>Multi-map progression model with sequential map unlock conditions</li>
+            <li>Section-gating system where each map is split into four unlockable objective zones</li>
+        </ul>
+    </div>
+
+    <!-- CORE SYSTEMS -->
+    <div class="section-card">
+        <h2>Core Systems</h2>
+        <ul>
+            <li>Level state manager coordinating target assignment, completion checks, and progression events</li>
+            <li>Map unlock flow requiring prior map completion before advancing to new environments</li>
+            <li>Per-section unlock logic based on required item discovery thresholds within each map</li>
+            <li>Difficulty scaling through denser scenes, tighter object placement, and larger search sets</li>
+        </ul>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="section-card">
+        <h2>Performance & Optimization</h2>
+        <ul>
+            <li>Data-driven level/map definitions for scalable content expansion without scene duplication</li>
+            <li>Optimized interaction checks to keep hidden-object selection responsive on mobile devices</li>
+            <li>Structured asset organization to support large numbers of scene props and target lists</li>
+            <li>Modular content architecture enabling fast iteration across maps and unlock conditions</li>
+        </ul>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-card">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom hidden-object search and validation systems</li>
+            <li>Map and section progression controllers</li>
+            <li>Hint and interaction feedback pipeline</li>
+            <li>Data-driven level configuration workflows</li>
+        </ul>
+    </div>
+
+    <!-- ROLE -->
+    <div class="section-card">
+        <h2>My Role</h2>
+        <ul>
+            <li>Sole developer responsible for gameplay architecture, implementation, and balancing</li>
+            <li>Designed core search mechanics, progression rules, and unlock-gating systems</li>
+            <li>Built scalable workflows for map authoring and objective configuration</li>
+            <li>Tuned challenge progression to balance accessibility with puzzle depth</li>
+        </ul>
+    </div>
+
+    <!-- STORE LINK -->
+    <a
+        href="https://apkpure.com/find-spot-hidden-object-game/com.find.it.treasurehunt.scavengerhunt.puzzle"
+        target="_blank"
+        class="project-btn"
+    >
+        ▶ View on Store
+    </a>
+
+</div>
+
+</body>
+</html>
