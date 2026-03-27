@@ -165,35 +165,47 @@ body {
 }
 
 .site-header__icon-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    width: 44px;
+    height: 44px;
     min-width: 44px;
     min-height: 44px;
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid var(--header-accent);
+    background: rgba(232, 168, 184, 0.06);
     color: var(--header-accent);
     text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .site-header__icon-link:hover {
     color: #f5c4cf;
-    background: rgba(232, 168, 184, 0.08);
+    background: rgba(232, 168, 184, 0.16);
+    border-color: #f5c4cf;
+    box-shadow: 0 0 20px rgba(232, 168, 184, 0.12);
     transform: translateY(-1px);
 }
 
 .site-header__icon-link:focus-visible {
     outline: 2px solid var(--header-accent);
     outline-offset: 3px;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .site-header__icon {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     flex-shrink: 0;
 }
 
