@@ -615,6 +615,135 @@ h2 {
     }
 }
 
+/* ===== COMPANY: PLATFORMS SHIPPED (BrilliantGamez) ===== */
+.company-platforms {
+    margin: 0;
+    padding: 18px 2px 6px;
+    border-top: 1px solid rgba(88, 166, 255, 0.12);
+}
+
+.company-platforms--page {
+    margin-top: 10px;
+}
+
+.company-platforms__heading {
+    margin: 0 0 12px;
+    padding: 0;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.company-platforms__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 14px;
+    align-items: stretch;
+}
+
+.company-platforms__list > li {
+    margin: 0;
+}
+
+.company-platforms__chip {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 52px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(12, 16, 24, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+}
+
+.company-platforms__chip--amazon {
+    gap: 16px;
+}
+
+.company-platforms__logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.company-platforms__stack {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.company-platforms__label {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+}
+
+.company-platforms__sub {
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--text-muted);
+    max-width: 22ch;
+}
+
+.company-platforms__amazon-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.company-platforms__amazon-text {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #f0f4f8;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.company-platforms__amazon-smile {
+    display: block;
+    width: 84px;
+    height: auto;
+    max-height: 12px;
+}
+
+.companies-showcase .company-panel .company-platforms {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.companies-showcase .company-panel .projects-carousel {
+    padding-top: 10px;
+}
+
+@media (max-width: 560px) {
+    .company-platforms__chip,
+    .company-platforms__chip--amazon {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .company-platforms__sub {
+        max-width: none;
+    }
+}
+
 .projects-company-title {
     margin: 0 0 8px;
     padding: 0;
