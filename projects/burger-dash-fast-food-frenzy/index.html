@@ -55,18 +55,10 @@
         <ul>
             <li>Countdown-driven gameplay loop integrating order queue, validation, and fail-state transitions</li>
             <li>Level architecture supporting 100 stages with normal, puzzle, and boss difficulty profiles</li>
+            <li>Deterministic order-rule evaluation ensuring consistent validation across gameplay modes</li>
+            <li>State-oriented order manager orchestrating request generation, validation, and completion checks</li>
             <li>Order comparison logic that matches expected customer sequence against player-generated output</li>
             <li>Adaptive input context that updates selectable ingredient sets per active order definition</li>
-        </ul>
-    </div>
-
-    <!-- AI & NPC ARCHITECTURE -->
-    <div class="section-card">
-        <h2>AI & NPC Architecture</h2>
-        <ul>
-            <li>Not NPC-AI driven; gameplay is based on deterministic order-rule evaluation</li>
-            <li>State-oriented order manager orchestrating request generation, validation, and completion checks</li>
-            <li>Configurable customer-order templates enabling scalable variation without code duplication</li>
             <li>Event-driven flow control for powerups, penalties, and level outcome resolution</li>
         </ul>
     </div>
@@ -77,6 +69,7 @@
         <ul>
             <li>ScriptableObject-driven level data pipeline simplifying design iteration and content scaling</li>
             <li>Data-based order templates reducing hardcoded logic across 100+ gameplay scenarios</li>
+            <li>Configurable customer-order templates enabling scalable variation without code duplication</li>
             <li>Lightweight state transitions optimized for responsive input and rapid UI feedback</li>
             <li>Modular gameplay components enabling maintainable expansion of modes and powerups</li>
         </ul>
