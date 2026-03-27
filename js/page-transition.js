@@ -5,7 +5,9 @@
  */
 (function () {
     var STORAGE_KEY = "portfolioNavDir";
+    var STORAGE_SKIP_ENTER = "portfolioNavSkipEnter";
     var shellClass = "page-transition-shell";
+    var TRANSITION_MS = 520;
 
     function prefersReducedMotion() {
         return (
@@ -115,14 +117,24 @@
         var shell = document.querySelector("." + shellClass);
         if (!shell || prefersReducedMotion()) {
             try {
+                sessionStorage.removeItem(STORAGE_SKIP_ENTER);
                 sessionStorage.setItem(STORAGE_KEY, dir);
             } catch (e) {}
             window.location.href = href;
             return;
         }
         try {
+            sessionStorage.setItem(STORAGE_SKIP_ENTER, "1");
             sessionStorage.setItem(STORAGE_KEY, dir);
         } catch (e) {}
+
+        var wipe = document.createElement("div");
+        wipe.className =
+            "pt-transition-wipe pt-transition-wipe--" +
+            (dir === "back" ? "back" : "forward");
+        wipe.setAttribute("aria-hidden", "true");
+        shell.parentNode.insertBefore(wipe, shell);
+
         var exitCls = dir === "back" ? "pt-exit-back" : "pt-exit-forward";
         var done = false;
         function go() {
@@ -132,17 +144,29 @@
             done = true;
             window.location.href = href;
         }
-        shell.addEventListener(
-            "animationend",
-            function (e) {
-                if (e.target === shell) {
-                    go();
-                }
-            },
-            { once: true }
-        );
-        shell.classList.add(exitCls);
-        window.setTimeout(go, 1100);
+
+        function armGoFrom(el) {
+            if (!el) {
+                return;
+            }
+            el.addEventListener(
+                "animationend",
+                function (e) {
+                    if (e.target === el) {
+                        go();
+                    }
+                },
+                { once: true }
+            );
+        }
+
+        armGoFrom(shell);
+        armGoFrom(wipe);
+        window.requestAnimationFrame(function () {
+            wipe.classList.add("pt-transition-wipe--run");
+            shell.classList.add(exitCls);
+        });
+        window.setTimeout(go, TRANSITION_MS);
     }
 
     document.addEventListener(
@@ -171,19 +195,32 @@
             return;
         }
 
+        var skipEnter = false;
+        try {
+            skipEnter = sessionStorage.getItem(STORAGE_SKIP_ENTER) === "1";
+            if (skipEnter) {
+                sessionStorage.removeItem(STORAGE_SKIP_ENTER);
+                sessionStorage.removeItem(STORAGE_KEY);
+            }
+        } catch (e) {}
+
+        if (skipEnter) {
+            return;
+        }
+
         var nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
         if (nav && nav.type === "back_forward") {
             try {
                 if (!sessionStorage.getItem(STORAGE_KEY)) {
                     sessionStorage.setItem(STORAGE_KEY, "back");
                 }
-            } catch (e) {}
+            } catch (e2) {}
         }
 
         var dir = null;
         try {
             dir = sessionStorage.getItem(STORAGE_KEY);
-        } catch (e) {}
+        } catch (e3) {}
 
         if (dir === "forward" || dir === "back") {
             applyEnterAnimation(shell, dir);
