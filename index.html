@@ -16,23 +16,31 @@
 
     <!-- Home hero (photo + bio) is injected at the top of this block by js/site-header.js -->
 
-    <!-- PROJECTS (BrilliantGamez) -->
-    <div class="projects-section-head">
-        <div class="projects-section-top">
-            <div class="projects-section-intro">
-                <h2 class="projects-company-title">BrilliantGamez</h2>
-                <p class="projects-heading">Projects</p>
-            </div>
-        </div>
-        <p class="projects-company-note">
-            Titles I designed and built solo while working with BrilliantGamez — ship-ready mobile games across multiple genres.
-        </p>
-        <div class="projects-section-row-actions">
-            <a href="all-projects.html" class="view-all-link">View all projects</a>
-        </div>
-    </div>
+    <section class="companies-showcase" aria-labelledby="companies-showcase-heading">
+        <header class="companies-showcase__intro">
+            <h2 id="companies-showcase-heading" class="companies-showcase__title">Studios I've worked with</h2>
+            <p class="companies-showcase__lead">
+                Work grouped by studio — each block is shipped titles and details from one company or team.
+            </p>
+        </header>
 
-    <div class="projects-carousel" role="region" aria-label="BrilliantGamez projects carousel">
+        <div class="companies-showcase__block">
+            <div class="projects-section-head">
+                <div class="projects-section-top">
+                    <div class="projects-section-intro">
+                        <h3 class="projects-company-title">BrilliantGamez</h3>
+                        <p class="projects-heading">Projects</p>
+                    </div>
+                </div>
+                <p class="projects-company-note">
+                    Titles I designed and built solo while working with BrilliantGamez — ship-ready mobile games across multiple genres.
+                </p>
+                <div class="projects-section-row-actions">
+                    <a href="all-projects.html" class="view-all-link">View all projects</a>
+                </div>
+            </div>
+
+            <div class="projects-carousel" role="region" aria-label="BrilliantGamez projects carousel">
         <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous projects">‹</button>
         <div class="projects-carousel-viewport">
             <div class="projects-track">
@@ -401,7 +409,9 @@
             </div>
         </div>
         <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next projects">›</button>
-    </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 

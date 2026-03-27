@@ -426,6 +426,46 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* ===== HOME: STUDIOS / COMPANIES (INDEX) ===== */
+.companies-showcase {
+    margin-top: 56px;
+}
+
+.companies-showcase__intro {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.companies-showcase__title {
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: #f0f6fc;
+}
+
+.companies-showcase__lead {
+    margin: 0;
+    max-width: 62ch;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.companies-showcase__block {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.companies-showcase .projects-section-head {
+    margin-top: 0;
+}
+
 /* ===== HOME: PROJECTS ROW (PLAY-STORE STYLE) ===== */
 .projects-section-head {
     display: flex;
@@ -946,6 +986,15 @@ p.projects-heading {
 @media (max-width: 680px) {
     .container {
         padding: 36px 16px 54px;
+    }
+
+    .companies-showcase {
+        margin-top: 40px;
+    }
+
+    .companies-showcase__intro {
+        margin-bottom: 22px;
+        padding-bottom: 16px;
     }
 
     .projects-section-intro {
