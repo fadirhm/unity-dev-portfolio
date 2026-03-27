@@ -33,13 +33,14 @@
     }
 
     function profileImgSrc() {
+        // Must match repo folder name: GitHub Pages is case-sensitive ("Images" not "images").
         if (BASE) {
-            return BASE + "/images/profile.jpg";
+            return BASE + "/Images/profile.jpg";
         }
         if (location.pathname.indexOf("/projects/") !== -1) {
-            return "../../images/profile.jpg";
+            return "../../Images/profile.jpg";
         }
-        return "images/profile.jpg";
+        return "Images/profile.jpg";
     }
 
     /** Full hero (photo + bio) only on main portfolio landing — not on project pages or all-projects */
