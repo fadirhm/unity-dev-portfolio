@@ -462,6 +462,47 @@ h2 {
     gap: 0;
 }
 
+/* One studio = one framed panel: company header + description + carousel read together */
+.companies-showcase .company-panel {
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    border-radius: 18px;
+    background: linear-gradient(
+        165deg,
+        rgba(20, 26, 36, 0.98) 0%,
+        rgba(14, 18, 26, 0.96) 42%,
+        rgba(11, 14, 22, 0.98) 100%
+    );
+    box-shadow:
+        0 16px 48px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(0, 0, 0, 0.35) inset,
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    padding: 22px 24px 10px;
+    overflow: hidden;
+}
+
+.companies-showcase .company-panel__head {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(88, 166, 255, 0.14);
+}
+
+.companies-showcase .company-panel .projects-carousel {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding: 14px 2px 12px;
+}
+
+.companies-showcase .company-panel .projects-track {
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.companies-showcase .company-panel .projects-section-intro {
+    border-color: rgba(88, 166, 255, 0.28);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
 .companies-showcase .projects-section-head {
     margin-top: 0;
 }
@@ -995,6 +1036,16 @@ p.projects-heading {
     .companies-showcase__intro {
         margin-bottom: 22px;
         padding-bottom: 16px;
+    }
+
+    .companies-showcase .company-panel {
+        padding: 16px 14px 8px;
+        border-radius: 14px;
+    }
+
+    .companies-showcase .company-panel .projects-carousel {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .projects-section-intro {
