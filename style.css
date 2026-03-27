@@ -167,6 +167,10 @@ h2.projects-heading {
     transform: scale(0.96);
 }
 
+.carousel-btn--hidden {
+    display: none;
+}
+
 /* Compact carousel cards (store-style: icon, title, subtitle) */
 .projects-track .project--compact {
     flex: 0 0 auto;

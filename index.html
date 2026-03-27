@@ -491,7 +491,32 @@
     var track = carousel.querySelector(".projects-track");
     var prev = carousel.querySelector(".carousel-btn--prev");
     var next = carousel.querySelector(".carousel-btn--next");
-    if (!viewport || !track) return;
+    if (!viewport || !track || !prev || !next) return;
+
+    var epsilon = 3;
+
+    function updateCarouselButtons() {
+        var maxScroll = viewport.scrollWidth - viewport.clientWidth;
+        if (maxScroll <= epsilon) {
+            prev.classList.add("carousel-btn--hidden");
+            next.classList.add("carousel-btn--hidden");
+            prev.setAttribute("aria-hidden", "true");
+            next.setAttribute("aria-hidden", "true");
+            prev.disabled = true;
+            next.disabled = true;
+            return;
+        }
+        var left = viewport.scrollLeft;
+        var atStart = left <= epsilon;
+        var atEnd = left >= maxScroll - epsilon;
+        prev.classList.toggle("carousel-btn--hidden", atStart);
+        next.classList.toggle("carousel-btn--hidden", atEnd);
+        prev.setAttribute("aria-hidden", atStart ? "true" : "false");
+        next.setAttribute("aria-hidden", atEnd ? "true" : "false");
+        prev.disabled = atStart;
+        next.disabled = atEnd;
+    }
+
     function step() {
         var card = track.querySelector(".project--compact");
         if (!card) return 280;
@@ -499,12 +524,24 @@
         var w = card.getBoundingClientRect().width + gap;
         return w > 0 ? w : 280;
     }
+
     prev.addEventListener("click", function () {
         viewport.scrollBy({ left: -step(), behavior: "smooth" });
     });
     next.addEventListener("click", function () {
         viewport.scrollBy({ left: step(), behavior: "smooth" });
     });
+
+    viewport.addEventListener("scroll", updateCarouselButtons, { passive: true });
+    window.addEventListener("resize", updateCarouselButtons);
+
+    if (window.ResizeObserver) {
+        new ResizeObserver(updateCarouselButtons).observe(viewport);
+    }
+
+    window.addEventListener("load", updateCarouselButtons);
+
+    updateCarouselButtons();
 })();
 </script>
 
