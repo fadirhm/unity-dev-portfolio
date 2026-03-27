@@ -59,6 +59,172 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* ===== HOME: PROJECTS ROW (PLAY-STORE STYLE) ===== */
+.projects-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+h2.projects-heading {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+    font-weight: 650;
+}
+
+.view-all-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: rgba(22, 27, 34, 0.65);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.view-all-link:hover {
+    border-color: var(--accent);
+    background: rgba(88, 166, 255, 0.08);
+}
+
+.view-all-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.projects-carousel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.projects-carousel-viewport {
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projects-carousel-viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-track {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding: 10px 6px 18px;
+    width: max-content;
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: rgba(22, 27, 34, 0.94);
+    color: var(--text);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.carousel-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.carousel-btn:active {
+    transform: scale(0.96);
+}
+
+/* Compact carousel cards (store-style: icon, title, subtitle) */
+.projects-track .project--compact {
+    flex: 0 0 auto;
+    width: 124px;
+    max-width: 124px;
+    min-height: 0;
+    margin: 0;
+    scroll-snap-align: start;
+    border-radius: 14px;
+}
+
+.projects-track .project--compact:hover {
+    transform: translateY(-5px);
+}
+
+.projects-track .project--compact .project-cover {
+    height: 84px;
+    border-radius: 12px 12px 0 0;
+}
+
+.projects-track .project--compact .project-body {
+    padding: 10px 10px 6px;
+}
+
+.projects-track .project--compact h3 {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects-track .project--compact .tags {
+    display: none;
+}
+
+.projects-track .project--compact .short-desc {
+    font-size: 0.65rem;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects-track .project--compact .project-btn-small {
+    margin: 0 8px 9px;
+    margin-top: auto;
+    padding: 5px 7px;
+    font-size: 0.61rem;
+    border-radius: 7px;
+}
+
 /* ===================================================== */
 /* ================= PROJECT GRID ======================= */
 /* ===================================================== */
@@ -303,6 +469,25 @@ h2 {
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
         justify-content: center;
+    }
+
+    .projects-carousel {
+        gap: 6px;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.25rem;
+    }
+
+    .projects-track .project--compact {
+        width: 112px;
+        max-width: 112px;
+    }
+
+    .projects-track .project--compact .project-cover {
+        height: 76px;
     }
 
     .project-hero {
