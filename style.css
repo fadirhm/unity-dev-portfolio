@@ -80,19 +80,52 @@ h2 {
 
 .projects-section-intro {
     min-width: 0;
+    padding: 14px 18px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(88, 166, 255, 0.22);
+    background: linear-gradient(
+        145deg,
+        rgba(88, 166, 255, 0.1) 0%,
+        rgba(22, 27, 34, 0.92) 45%,
+        rgba(20, 26, 33, 0.98) 100%
+    );
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
 }
 
-.projects-company-label {
-    margin: 0 0 6px;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
+.projects-company-title {
+    margin: 0 0 8px;
+    padding: 0;
+    border: none;
+    font-size: clamp(1.7rem, 4.2vw, 2.45rem);
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    color: #f0f6fc;
+    position: relative;
+    display: inline-block;
+}
+
+.projects-company-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    max-width: 11rem;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), #3f8cff 55%, transparent);
+}
+
+p.projects-heading {
+    margin: 12px 0 0;
+    padding: 0;
+    border: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
     text-transform: uppercase;
-    color: var(--accent-soft);
-}
-
-.projects-company-label--page {
-    margin-bottom: 4px;
+    color: var(--text-muted);
 }
 
 .projects-company-note {
@@ -103,12 +136,40 @@ h2 {
     color: var(--text-muted);
 }
 
-h2.projects-heading {
-    margin: 0;
+/* BrilliantGamez "all projects" page */
+.projects-company-page-title {
+    margin: 10px 0 8px;
+    padding: 0 0 14px;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    font-size: clamp(1.85rem, 4.5vw, 2.55rem);
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    color: #f0f6fc;
+    position: relative;
+}
+
+.projects-company-page-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: min(12rem, 55%);
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+h2.projects-page-subheading {
+    margin: 14px 0 10px;
     padding: 0;
     border: none;
-    font-size: clamp(1.25rem, 2.2vw, 1.5rem);
-    font-weight: 650;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
 }
 
 .view-all-link {
@@ -499,6 +560,10 @@ h2.projects-heading {
 @media (max-width: 680px) {
     .container {
         padding: 54px 16px;
+    }
+
+    .projects-section-intro {
+        padding: 12px 14px 14px;
     }
 
     .projects-grid {
