@@ -487,20 +487,23 @@
 (function () {
     var carousel = document.querySelector(".projects-carousel");
     if (!carousel) return;
+    var viewport = carousel.querySelector(".projects-carousel-viewport");
     var track = carousel.querySelector(".projects-track");
     var prev = carousel.querySelector(".carousel-btn--prev");
     var next = carousel.querySelector(".carousel-btn--next");
+    if (!viewport || !track) return;
     function step() {
         var card = track.querySelector(".project--compact");
         if (!card) return 280;
         var gap = parseFloat(window.getComputedStyle(track).gap) || 14;
-        return card.getBoundingClientRect().width + gap;
+        var w = card.getBoundingClientRect().width + gap;
+        return w > 0 ? w : 280;
     }
     prev.addEventListener("click", function () {
-        track.scrollBy({ left: -step(), behavior: "smooth" });
+        viewport.scrollBy({ left: -step(), behavior: "smooth" });
     });
     next.addEventListener("click", function () {
-        track.scrollBy({ left: step(), behavior: "smooth" });
+        viewport.scrollBy({ left: step(), behavior: "smooth" });
     });
 })();
 </script>
