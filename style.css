@@ -160,6 +160,73 @@ body {
     }
 }
 
+/* ===== PAGE TRANSITIONS (between portfolio pages) ===== */
+html {
+    overflow-x: clip;
+}
+
+.page-transition-shell {
+    min-height: 100%;
+    will-change: transform;
+}
+
+.page-transition-shell.pt-exit-forward {
+    animation: pt-exit-left 0.38s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.page-transition-shell.pt-exit-back {
+    animation: pt-exit-right 0.38s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.page-transition-shell.pt-enter-forward {
+    animation: pt-enter-from-right 0.42s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+.page-transition-shell.pt-enter-back {
+    animation: pt-enter-from-left 0.42s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+@keyframes pt-exit-left {
+    to {
+        transform: translateX(-100%);
+        opacity: 0.92;
+    }
+}
+
+@keyframes pt-exit-right {
+    to {
+        transform: translateX(100%);
+        opacity: 0.92;
+    }
+}
+
+@keyframes pt-enter-from-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pt-enter-from-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-transition-shell.pt-exit-forward,
+    .page-transition-shell.pt-exit-back,
+    .page-transition-shell.pt-enter-forward,
+    .page-transition-shell.pt-enter-back {
+        animation: none !important;
+    }
+}
+
 /* ===== CONTAINER ===== */
 .container {
     max-width: 1100px;
