@@ -569,12 +569,15 @@ h2 {
 }
 
 .projects-company-logo {
-    width: clamp(52px, 11vw, 70px);
+    width: clamp(56px, 12vw, 82px);
     height: auto;
     flex-shrink: 0;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.4));
+    border-radius: 10px;
+    box-shadow:
+        0 4px 22px rgba(0, 0, 0, 0.55),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .projects-company-brand__text {
@@ -582,7 +585,16 @@ h2 {
     flex: 1;
 }
 
-.company-tenure {
+.company-panel__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.company-tenure,
+.company-team-strength {
     margin: 0;
     flex-shrink: 0;
     display: flex;
@@ -626,7 +638,14 @@ h2 {
 }
 
 @media (max-width: 560px) {
-    .company-tenure {
+    .company-panel__stats {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .company-tenure,
+    .company-team-strength {
         align-items: flex-start;
         text-align: left;
         align-self: stretch;
