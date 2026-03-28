@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermart Store Simulator Game — Major contribution</title>
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+<body>
+<script src="../../js/site-header.js"></script>
+
+<div class="container">
+
+    <a href="/unity-dev-portfolio/all-projects.html" class="back-link">⬅ Back to All Projects</a>
+
+    <h1>🛒 Supermart Store Simulator Game</h1>
+
+    <div class="project-hero">
+        <img src="images/SupermartStoreSimulatorIMG.svg" alt="Supermart Store Simulator Game">
+        <div class="project-summary">
+            <p>
+                Port and rescue of a PC-oriented supermarket simulator into a shippable Android (and later iOS) product:
+                repairing a broken project, replacing unsuitable plugins, rebuilding content for mobile budgets, and
+                delivering touch controls, tutorials, and performance work for a broad API 24+ device target.
+            </p>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>Context</h2>
+        <ul>
+            <li>Received a damaged Unity project originally aimed at PC / Steam: thousands of errors, missing libraries, plugins, and assets — not playable in the editor</li>
+            <li>Goal: make it run, then optimize and ship on mobile within tight hardware limits</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Recovery &amp; porting</h2>
+        <ul>
+            <li>Restored missing plugins and swapped or removed ones that were not viable on Unity + Android</li>
+            <li>Iterated until the project loaded and played; then addressed PC-centric assumptions scene by scene</li>
+            <li>First gameplay scene initially took ~10–15 minutes to load in-editor due to mesh, shader, and script issues plus asset bloat</li>
+            <li>Replaced heavy models, removed unnecessary shaders, and converted inappropriate mesh colliders to simpler colliders</li>
+            <li>Sequenced scene initialization to spread cost instead of one massive blocking load</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Optimization &amp; gameplay scope</h2>
+        <ul>
+            <li>Replaced per-frame <code>Update</code> misuse with lighter, custom update groups where appropriate</li>
+            <li>Full reskin and asset compression; tuned batches and rendering with baking and culling where it helped</li>
+            <li>Pooling for NPCs and products to cut allocation spikes and keep framerate stable</li>
+            <li>After profiling, removed the paint system (too many textures) and trimmed furniture and product variety to what gameplay required for low-end targets</li>
+            <li>Tuned for API 24+ across a wide range of devices with conservative quality settings</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Controls, onboarding &amp; launch</h2>
+        <ul>
+            <li>Rebuilt PC interactions for touch: mapped everything through the new Input System for consistent mobile controls</li>
+            <li>Authored a full in-game day of tutorial so players could learn the loop on phone</li>
+            <li>Roughly one to one and a half months to Play Store launch, then App Store for iOS</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>My role</h2>
+        <ul>
+            <li>Major contribution: end-to-end technical ownership of port, optimization, UX for mobile, and shipping — on an existing design, not a greenfield solo title</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Tools &amp; technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Unity Input System</li>
+            <li>Android &amp; iOS build pipelines</li>
+        </ul>
+    </div>
+
+    <p class="project-store-links">
+        <a
+            href="https://apkpure.com/supermart-store-simulator-game/com.mustank.supermarketsimulator3dshop"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+        >
+            ▶ View listing (APKPure)
+        </a>
+    </p>
+
+</div>
+
+<script src="../../js/page-transition.js"></script>
+</body>
+</html>

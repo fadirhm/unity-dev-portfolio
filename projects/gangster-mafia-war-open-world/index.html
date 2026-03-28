@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangster Mafia War: Open World — Major contribution</title>
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+<body>
+<script src="../../js/site-header.js"></script>
+
+<div class="container">
+
+    <a href="/unity-dev-portfolio/all-projects.html" class="back-link">⬅ Back to All Projects</a>
+
+    <h1>🌆 Gangster Mafia War: Open World</h1>
+
+    <div class="project-hero">
+        <img src="images/GangsterMafiaWarIMG.svg" alt="Gangster Mafia War: Open World">
+        <div class="project-summary">
+            <p>
+                Live open-world action title where I owned stability and ANR reduction: profiling with Firebase Crashlytics
+                and Logcat, fixing startup and gameplay spikes, and tightening main-thread work so the game stayed within
+                store thresholds.
+            </p>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>Contribution</h2>
+        <ul>
+            <li>Brought ANRs back under the Play Console threshold by eliminating freezes and long stalls on the main thread</li>
+            <li>Resolved crash-on-open and intermittent gameplay crashes traced through stack traces and device logs</li>
+            <li>Staged initialization of existing systems so heavy work did not hit the main thread all at once on launch</li>
+            <li>Removed redundant per-frame and startup work that caused hitches during play</li>
+            <li>Simplified hot paths: cut unnecessary loops and iterations, kept scripts efficient and easier to maintain</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>How I approached it</h2>
+        <ul>
+            <li>Used Firebase Crashlytics and Logcat to group issues by frequency and severity before changing code</li>
+            <li>Profiled frame spikes and loading phases to find work that belonged off the main thread or in smaller steps</li>
+            <li>Validated fixes against the same profiling signals to confirm ANRs and jank dropped measurably</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Tools &amp; technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Firebase Crashlytics</li>
+            <li>Android Logcat &amp; Play Console ANR reports</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>My role</h2>
+        <ul>
+            <li>Major contribution: performance and stability on a live codebase — not solo authorship of the original title</li>
+            <li>Focused on ANR prevention, crash fixes, and sustainable initialization patterns</li>
+        </ul>
+    </div>
+
+    <p class="project-store-links">
+        <a
+            href="https://play.google.com/store/apps/details?id=com.brilliantgamez.flame.hero.flying.robot.speed.hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+        >
+            ▶ View on Google Play
+        </a>
+        <a
+            href="https://apkpure.com/miami-spider-rope-hero-fight/com.brilliantgamez.flame.hero.flying.robot.speed.hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn project-btn--secondary"
+        >
+            Alternate listing (APKPure)
+        </a>
+    </p>
+
+</div>
+
+<script src="../../js/page-transition.js"></script>
+</body>
+</html>
