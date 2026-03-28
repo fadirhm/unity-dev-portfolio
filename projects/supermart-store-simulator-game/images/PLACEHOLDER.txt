@@ -1,2 +1,2 @@
-Replace SupermartStoreSimulatorIMG.svg with a real cover:
-SupermartStoreSimulatorIMG.webp (recommended 400×225 or similar aspect)
+Cover asset:
+SupermartStoreSimulatorIMG.webp
