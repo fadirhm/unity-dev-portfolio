@@ -695,9 +695,9 @@ h2 {
 .company-platforms__chip {
     display: flex;
     align-items: center;
-    gap: 14px;
-    min-height: 52px;
-    padding: 10px 16px;
+    gap: 12px;
+    min-height: 46px;
+    padding: 8px 14px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(12, 16, 24, 0.9);
@@ -705,12 +705,12 @@ h2 {
 }
 
 .company-platforms__chip--amazon {
-    gap: 16px;
+    gap: 12px;
 }
 
 .company-platforms__logo {
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
@@ -744,12 +744,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 2px;
     flex-shrink: 0;
 }
 
 .company-platforms__amazon-text {
-    font-size: 1.05rem;
+    font-size: 0.82rem;
     font-weight: 800;
     color: #f0f4f8;
     letter-spacing: 0.03em;
@@ -759,9 +759,9 @@ h2 {
 
 .company-platforms__amazon-smile {
     display: block;
-    width: 84px;
+    width: 62px;
     height: auto;
-    max-height: 12px;
+    max-height: 9px;
 }
 
 .companies-showcase .company-panel .company-platforms {
