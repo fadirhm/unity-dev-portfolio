@@ -499,6 +499,13 @@ h2 {
     padding-bottom: 16px;
 }
 
+.companies-showcase .company-panel .company-panel__view-all {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 4px 2px;
+    margin-top: 2px;
+}
+
 .companies-showcase .company-panel .projects-section-intro {
     border-color: rgba(88, 166, 255, 0.28);
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
