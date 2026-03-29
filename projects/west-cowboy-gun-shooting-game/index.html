@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Cowboy: Gun Shooting Game — Major contribution</title>
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+<body>
+<script src="../../js/site-header.js"></script>
+
+<div class="container">
+
+    <a href="/unity-dev-portfolio/all-projects.html" class="back-link">⬅ Back to All Projects</a>
+
+    <h1>🤠 West Cowboy: Gun Shooting Game</h1>
+
+    <div class="project-hero">
+        <img src="images/WestCowboyGunShootingIMG.svg" alt="West Cowboy: Gun Shooting Game">
+        <div class="project-summary">
+            <p>
+                Work on a purchased third-party codebase: careful refactors without breaking existing systems, then ANR
+                fixes and load sequencing so the game could run on low-end devices with a predictable startup.
+            </p>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>Contribution</h2>
+        <ul>
+            <li>Updated and extended gameplay code while preserving the original architecture enough to stay shippable</li>
+            <li>Addressed ANRs surfaced on weaker hardware by auditing main-thread work and startup cost</li>
+            <li>Sequentialized scene-manager loading so dependencies finished before gameplay logic ran</li>
+            <li>Kept the main thread light during boot and hand-off into the first playable moment</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>My role</h2>
+        <ul>
+            <li>Major contribution: maintenance and stabilization on an acquired codebase — not greenfield development of the original title</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Tools &amp; technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Scene management &amp; load order</li>
+        </ul>
+    </div>
+
+    <p class="project-store-links">
+        <a
+            href="https://apkpure.com/cowboy-survival-shooting-game/com.westland.survival.cowboy.games"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+        >
+            ▶ View listing (APKPure)
+        </a>
+    </p>
+
+</div>
+
+<script src="../../js/page-transition.js"></script>
+</body>
+</html>

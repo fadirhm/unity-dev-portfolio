@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225" role="img" aria-label="West Cowboy placeholder cover">
+  <defs>
+    <linearGradient id="w" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#120e0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#w)"/>
+  <text x="200" y="108" text-anchor="middle" fill="#c4a574" font-family="system-ui,sans-serif" font-size="12" font-weight="600">West Cowboy: Gun Shooting Game</text>
+  <text x="200" y="128" text-anchor="middle" fill="#7a6a52" font-family="system-ui,sans-serif" font-size="11">Replace with WestCowboyGunShootingIMG.webp</text>
+</svg>

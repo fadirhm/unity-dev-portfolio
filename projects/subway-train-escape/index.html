@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Train Escape! — Major contribution</title>
+    <link rel="stylesheet" href="/unity-dev-portfolio/style.css">
+</head>
+<body>
+<script src="../../js/site-header.js"></script>
+
+<div class="container">
+
+    <a href="/unity-dev-portfolio/all-projects.html" class="back-link">⬅ Back to All Projects</a>
+
+    <h1>🚇 Subway Train Escape!</h1>
+
+    <div class="project-hero">
+        <img src="images/SubwayTrainEscapeIMG.svg" alt="Subway Train Escape!">
+        <div class="project-summary">
+            <p>
+                Optimization and ANR work on a level-based runner-style title: sequential initialization, lighter update
+                loops, and moving level content off a single massive load so the main thread stayed responsive across
+                dozens of levels.
+            </p>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>Contribution</h2>
+        <ul>
+            <li>Resolved ANRs tied to startup and early-game stalls, including main-thread contention during the first moments of play</li>
+            <li>Replaced unnecessary per-frame work with custom update groups where the design did not need full <code>Update</code> every frame</li>
+            <li>Identified that preloading ~50–80 levels at once was overloading initialization; shifted to per-level data and runtime spawning</li>
+            <li>Stored level definitions in ScriptableObjects and spawned the active level into the gameplay scene at load time — keeping memory and init cost bounded</li>
+            <li>Noted that Addressables or additive loading would be a strong next step; the ScriptableObject + spawn approach shipped first and stabilized the build</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>My role</h2>
+        <ul>
+            <li>Major contribution: performance and stability on an existing codebase — not the original solo author of the title</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Tools &amp; technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>ScriptableObjects for level data</li>
+            <li>Android profiling &amp; ANR reports</li>
+        </ul>
+    </div>
+
+    <p class="project-store-links">
+        <a
+            href="https://apkpure.com/train-escape/com.mustank.train.traffic.escape"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+        >
+            ▶ View listing (APKPure)
+        </a>
+    </p>
+
+</div>
+
+<script src="../../js/page-transition.js"></script>
+</body>
+</html>
