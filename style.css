@@ -1129,8 +1129,11 @@ p.projects-heading {
     transform: scale(0.96);
 }
 
+/* Keep layout width when a direction is unavailable (avoid card row reflow / snap) */
 .carousel-btn--hidden {
-    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Compact carousel cards (store-style: icon, title, subtitle) */
