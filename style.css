@@ -499,11 +499,43 @@ h2 {
     padding-bottom: 16px;
 }
 
-.companies-showcase .company-panel .company-panel__view-all {
+/* Home: full gallery CTA — matches project card “View Details” (green) */
+.companies-showcase .company-panel .company-panel__view-all--prominent {
     display: flex;
-    justify-content: flex-end;
-    padding: 6px 4px 2px;
-    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px 10px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 24px;
+    background: linear-gradient(135deg, var(--success-start), var(--success-end));
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 6px 20px rgba(46, 160, 67, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.view-all-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(46, 160, 67, 0.38);
+    filter: brightness(1.06);
+}
+
+.view-all-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
 .companies-showcase .company-panel .projects-section-intro {
