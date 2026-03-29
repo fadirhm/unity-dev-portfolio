@@ -103,6 +103,16 @@
         </div>
     </div>
 
+    <div class="projects-genre-filter" id="projects-genre-filter" role="region" aria-labelledby="projects-genre-filter-label">
+        <div class="projects-genre-filter__inner">
+            <label id="projects-genre-filter-label" class="projects-genre-filter__label" for="projects-genre-filter-select">Genre</label>
+            <select id="projects-genre-filter-select" class="projects-genre-filter__select" autocomplete="off">
+                <option value="">All</option>
+            </select>
+        </div>
+        <p id="projects-genre-filter-status" class="projects-genre-filter__status" aria-live="polite"></p>
+    </div>
+
     <section class="projects-page-section" id="solo-built-titles" aria-labelledby="solo-projects-heading">
         <h2 id="solo-projects-heading" class="projects-page-section__title">Solo-built titles</h2>
         <p class="projects-page-section__lead">
@@ -393,5 +403,6 @@
 </div>
 
 <script src="js/page-transition.js"></script>
+<script src="js/projects-genre-filter.js"></script>
 </body>
 </html>
