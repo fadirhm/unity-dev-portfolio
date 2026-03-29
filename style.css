@@ -432,6 +432,10 @@ h2 {
     margin-top: 56px;
 }
 
+.companies-showcase--all-projects-top {
+    margin-top: 1.15rem;
+}
+
 .companies-showcase__intro {
     margin-bottom: 28px;
     padding-bottom: 20px;
