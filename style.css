@@ -434,6 +434,11 @@ h2 {
 
 .companies-showcase--all-projects-top {
     margin-top: 1.15rem;
+    scroll-margin-top: 76px;
+}
+
+#all-projects-brilliantgamez-heading {
+    scroll-margin-top: 76px;
 }
 
 .companies-showcase__intro {
@@ -636,6 +641,71 @@ h2 {
 /* Home: Major contribution / Solo-built split + ~6 cards per viewport */
 .home-studio-section {
     margin-top: 1.1rem;
+}
+
+.companies-showcase .company-panel .company-panel__studio-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 12px 14px 14px;
+    border-top: 1px solid rgba(88, 166, 255, 0.14);
+}
+
+.companies-showcase .company-panel .company-panel__more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    border-radius: 11px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #e8f2ff;
+    background: linear-gradient(
+        155deg,
+        rgba(88, 166, 255, 0.22) 0%,
+        rgba(56, 108, 176, 0.14) 50%,
+        rgba(22, 30, 44, 0.95) 100%
+    );
+    border: 1px solid rgba(121, 184, 255, 0.45);
+    box-shadow:
+        0 6px 22px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(0, 0, 0, 0.25) inset,
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
+}
+
+.companies-showcase .company-panel .company-panel__more-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(165, 214, 255, 0.65);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.42),
+        0 0 20px rgba(88, 166, 255, 0.18);
+    filter: brightness(1.06);
+}
+
+.companies-showcase .company-panel .company-panel__more-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.companies-showcase .company-panel .company-panel__more-note {
+    margin: 0;
+    max-width: 40ch;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+}
+
+.companies-showcase .company-panel .company-panel__more-btn .company-panel__more-btn-hint {
+    font-weight: 700;
+    opacity: 0.9;
 }
 
 .companies-showcase .company-panel .home-studio-section:first-of-type {
@@ -1549,6 +1619,10 @@ p.projects-heading {
 
 .projects-page-section#major-contribution,
 .projects-page-section#solo-built-titles {
+    scroll-margin-top: 76px;
+}
+
+#all-projects-brilliantgamez-heading {
     scroll-margin-top: 76px;
 }
 
