@@ -35,12 +35,12 @@
     function profileImgSrc() {
         // Must match repo folder name: GitHub Pages is case-sensitive ("Images" not "images").
         if (BASE) {
-            return BASE + "/Images/profile.jpg";
+            return BASE + "/Images/profile.jfif";
         }
         if (location.pathname.indexOf("/projects/") !== -1) {
-            return "../../Images/profile.jpg";
+            return "../../Images/profile.jfif";
         }
-        return "Images/profile.jpg";
+        return "Images/profile.jfif";
     }
 
     /** Full hero (photo + bio) only on main portfolio landing — not on project pages, all-projects, or studio detail pages */
