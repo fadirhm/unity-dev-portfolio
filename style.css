@@ -411,6 +411,10 @@ h1 {
     margin: 0 0 10px;
 }
 
+.container > .tags {
+    margin: 0 0 18px;
+}
+
 .tagline {
     color: var(--text-muted);
     font-size: 1.05rem;
