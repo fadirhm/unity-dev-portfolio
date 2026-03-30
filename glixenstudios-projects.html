@@ -93,27 +93,74 @@
     <section class="projects-page-section" id="solo-built-titles" aria-labelledby="glixen-solo-heading">
         <h2 id="glixen-solo-heading" class="projects-page-section__title">Solo-built titles</h2>
         <p class="projects-page-section__lead">
-            Add GlixenStudios solo-built project cards here.
+            Games where I owned core mechanics, modes, and level design at GlixenStudios.
         </p>
-        <div class="section-card">
-            <h2>Coming soon</h2>
-            <p>Project details for this section will be added next.</p>
+        <div class="projects-genre-filter projects-genre-filter--section js-genre-filter" role="region" aria-labelledby="glixen-solo-genre-label">
+            <div class="projects-genre-filter__inner">
+                <label id="glixen-solo-genre-label" class="projects-genre-filter__label" for="glixen-solo-genre-filter-select">Genre</label>
+                <select id="glixen-solo-genre-filter-select" class="projects-genre-filter__select" autocomplete="off" data-genre-url-param="glixen_solo_genre">
+                    <option value="">All</option>
+                </select>
+            </div>
+            <p id="glixen-solo-genre-filter-status" class="projects-genre-filter__status" aria-live="polite"></p>
+        </div>
+        <div class="projects-grid">
+            <div class="project">
+                <img
+                    src="projects/rolling-ball-race-game/images/RollingBallRaceIMG.svg"
+                    alt="Rolling Ball Race Game"
+                    class="project-cover"
+                >
+                <div class="project-body">
+                    <h3>🎱 Rolling Ball Race Game</h3>
+                    <div class="tags" aria-label="Genres">
+                        <span class="tag">Arcade</span>
+                        <span class="tag">Puzzle</span>
+                        <span class="tag">Racing</span>
+                    </div>
+                </div>
+                <a href="projects/rolling-ball-race-game/index.html" class="project-btn-small">▶ View Details</a>
+            </div>
         </div>
     </section>
 
     <section class="projects-page-section" id="major-contribution" aria-labelledby="glixen-major-heading">
         <h2 id="glixen-major-heading" class="projects-page-section__title">Major contribution on projects</h2>
         <p class="projects-page-section__lead">
-            Add GlixenStudios major-contribution project cards here.
+            Titles where I expanded content, cutscenes, and stability on existing GlixenStudios codebases.
         </p>
-        <div class="section-card">
-            <h2>Coming soon</h2>
-            <p>Project details for this section will be added next.</p>
+        <div class="projects-genre-filter projects-genre-filter--section js-genre-filter" role="region" aria-labelledby="glixen-major-genre-label">
+            <div class="projects-genre-filter__inner">
+                <label id="glixen-major-genre-label" class="projects-genre-filter__label" for="glixen-major-genre-filter-select">Genre</label>
+                <select id="glixen-major-genre-filter-select" class="projects-genre-filter__select" autocomplete="off" data-genre-url-param="glixen_major_genre">
+                    <option value="">All</option>
+                </select>
+            </div>
+            <p id="glixen-major-genre-filter-status" class="projects-genre-filter__status" aria-live="polite"></p>
+        </div>
+        <div class="projects-grid">
+            <div class="project">
+                <img
+                    src="projects/scary-teacher-evil-home-prank/images/ScaryTeacherEvilHomeIMG.svg"
+                    alt="Scary Teacher: Evil Home Prank"
+                    class="project-cover"
+                >
+                <div class="project-body">
+                    <h3>👩‍🏫 Scary Teacher: Evil Home Prank</h3>
+                    <div class="tags" aria-label="Genres">
+                        <span class="tag">Horror</span>
+                        <span class="tag">Stealth</span>
+                        <span class="tag">Casual</span>
+                    </div>
+                </div>
+                <a href="projects/scary-teacher-evil-home-prank/index.html" class="project-btn-small">▶ View Details</a>
+            </div>
         </div>
     </section>
 
 </div>
 
 <script src="js/page-transition.js"></script>
+<script src="js/projects-genre-filter.js"></script>
 </body>
 </html>
