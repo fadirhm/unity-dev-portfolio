@@ -43,13 +43,16 @@
         return "Images/profile.jpg";
     }
 
-    /** Full hero (photo + bio) only on main portfolio landing — not on project pages or all-projects */
+    /** Full hero (photo + bio) only on main portfolio landing — not on project pages, all-projects, or studio detail pages */
     function isPortfolioHome() {
         var p = location.pathname.replace(/\\/g, "/");
         if (p.indexOf("/projects/") !== -1) {
             return false;
         }
         if (p.indexOf("all-projects.html") !== -1) {
+            return false;
+        }
+        if (p.indexOf("glixenstudios-projects.html") !== -1) {
             return false;
         }
         return true;
