@@ -597,6 +597,10 @@ h2 {
     gap: 0;
 }
 
+.companies-showcase .companies-showcase__block.company-panel + .companies-showcase__block.company-panel {
+    margin-top: 12px;
+}
+
 /* One studio = one framed panel: company header + description + carousel read together */
 .companies-showcase .company-panel {
     border: 1px solid rgba(88, 166, 255, 0.2);
