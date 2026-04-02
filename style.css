@@ -431,9 +431,119 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* ===== HOME: SKILLS & TOOLS (INDEX) ===== */
+#home-skills-heading {
+    scroll-margin-top: 76px;
+}
+
+.home-skills {
+    margin-top: 36px;
+    padding: 18px 18px 20px;
+    border: 1px solid rgba(88, 166, 255, 0.22);
+    border-radius: 18px;
+    background: linear-gradient(
+        165deg,
+        rgba(20, 26, 36, 0.95) 0%,
+        rgba(14, 18, 26, 0.92) 45%,
+        rgba(12, 15, 22, 0.96) 100%
+    );
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(0, 0, 0, 0.28) inset,
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.home-skills__header {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(88, 166, 255, 0.12);
+}
+
+.home-skills__title {
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+    font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: #f0f6fc;
+}
+
+.home-skills__lead {
+    margin: 0;
+    max-width: 68ch;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.home-skills__body {
+    display: grid;
+    gap: 22px;
+    align-items: start;
+}
+
+@media (min-width: 840px) {
+    .home-skills__body {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 36px;
+    }
+}
+
+.home-skills__subhead {
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+    font-size: clamp(0.78rem, 1.35vw, 0.88rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #b8d9ff;
+}
+
+.home-skills__list {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--text-body);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.home-skills__list li {
+    margin-bottom: 8px;
+}
+
+.home-skills__list li:last-child {
+    margin-bottom: 0;
+}
+
+.home-skills__tags {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 8px;
+}
+
+.home-skills__tag-item {
+    margin: 0;
+    padding: 0;
+}
+
+.home-skills__tags .tag {
+    font-size: 0.72rem;
+    padding: 5px 11px;
+}
+
+@media (max-width: 560px) {
+    .home-skills {
+        padding: 16px 14px 18px;
+    }
+}
+
 /* ===== HOME: STUDIOS / COMPANIES (INDEX) ===== */
 .companies-showcase {
-    margin-top: 56px;
+    margin-top: 44px;
 }
 
 #studio-brilliantgamez,
